@@ -26,4 +26,4 @@ jobs:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_DEPLOY_RG }}
         template: bicep/deploy.bicep
-        parameters: prod.deploy.parameters.json
+        parameters: bicep/prod.deploy.parameters.json
