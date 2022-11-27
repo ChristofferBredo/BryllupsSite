@@ -24,6 +24,6 @@ jobs:
       uses: azure/arm-deploy@v1
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        resourceGroupName: MyVeryBestResourceGroup
+        resourceGroupName: ${{ secrets.AZURE_DEPLOY_RG }}
         template: bicep/deploy.bicep
         parameters: prod.deploy.parameters.json
