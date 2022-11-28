@@ -68,9 +68,11 @@ jobs:
 
     - name: Upload to blob storage
       uses: azure/CLI@v1
+      env: 
+        STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name {{ secrets.AZURE_STORAGE_ACCOUNT_NAME }} --auth-mode key -d '$web' -s dist/bryllupsite
+            az storage blob upload-batch --account-name $STORAGE_ACCOUNT_NAME --auth-mode key   -d '$web' -s dist/bryllupsite
 
     # Azure logout
     - name: Logout Azure
