@@ -8,7 +8,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  DeployProd:
+  DeployBicep:
+    name: Deploy Bicep
     runs-on: ubuntu-latest
     steps:
 
@@ -28,13 +29,19 @@ jobs:
         template: bicep/deploy.bicep
         parameters: bicep/prod.deploy.parameters.json
 
+  DeployWebApp:
+    name: Deploy Web App
+    needs: DeployBicep
+    runs-on: ubuntu-latest
+    defaults: 
+      run: 
+        working-directory: ./bryllupsite
+    steps:
+
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
         node-version: '19'
-
-    - name: Init npm
-      run: npm init
 
     - name: Install dependencies
       run: npm install
