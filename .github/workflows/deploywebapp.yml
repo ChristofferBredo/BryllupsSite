@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults: 
       run: 
-        working-directory: ./bryllupsite
+        working-directory: bryllupsite
     steps:
 
     - name: Setup Node.js
@@ -51,6 +51,11 @@ jobs:
 
     - name: Build web app
       run: npm run build:prod
+
+    - name: Log into Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Upload to blob storage
       uses: azure/CLI@v1
