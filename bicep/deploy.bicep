@@ -49,3 +49,7 @@ resource bryllupstorage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
     }
   }
 }
+
+resource WebContainer 'Microsoft.Storage/storageAccounts/blobServices/containers@2022-05-01' = {
+  name: '${bryllupstorage.name}/default/$web'
+}
