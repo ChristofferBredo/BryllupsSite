@@ -27,3 +27,29 @@ jobs:
         resourceGroupName: ${{ secrets.AZURE_DEPLOY_RG }}
         template: bicep/deploy.bicep
         parameters: bicep/prod.deploy.parameters.json
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '19'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm run test:headless
+
+    - name: Build web app
+      run: npm run build:prod
+
+    - name: Upload to blob storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+            az storage blob upload-batch --account-name {{ secrets.AZURE_STORAGE_ACCOUNT_NAME }} --auth-mode key -d '$web' -s dist/bryllupsite
+
+    # Azure logout
+    - name: logout
+      run: |
+            az logout
+      if: always()
