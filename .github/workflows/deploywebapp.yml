@@ -28,6 +28,12 @@ jobs:
         resourceGroupName: ${{ secrets.AZURE_DEPLOY_RG }}
         template: bicep/deploy.bicep
         parameters: bicep/prod.deploy.parameters.json
+    
+    # Azure logout
+    - name: Logout Azure
+      run: |
+            az logout
+      if: always()
 
   DeployWebApp:
     name: Deploy Web App
@@ -67,7 +73,7 @@ jobs:
             az storage blob upload-batch --account-name {{ secrets.AZURE_STORAGE_ACCOUNT_NAME }} --auth-mode key -d '$web' -s dist/bryllupsite
 
     # Azure logout
-    - name: logout
+    - name: Logout Azure
       run: |
             az logout
       if: always()
