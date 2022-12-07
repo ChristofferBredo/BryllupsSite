@@ -1,18 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-div.card-header {
- font-size: large;
-}
-
-div.card {
-  margin-top: 10px
-}
-
-.table {
-  margin-top: 10px
-}
-
 a {
   text-decoration: none; 
+}
+
+hr.solid{
+  border-top: 2px solid #53402F;
+}
+
+.container-border {
+  border: 2px solid #53402F;
+  margin: auto 25%;
+}
+
+.header-title{
+  font-family: "Playfair Display";
+  font-size: xx-large;
+  text-align: center;
+  color: #53402F;
+}
+
+.body-text{
+  text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+  
+  .container-border{
+    margin: auto 10%;
+  }
+
+  .header-title{
+    font-size: x-large;
+  }
+
 }

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AgendaComponent } from './components/agenda/agenda.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PagenotfoundComponent,
-    HomeComponent
+    HomeComponent,
+    AgendaComponent
   ],
   imports: [
     BrowserModule,
