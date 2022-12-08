@@ -7,13 +7,17 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AgendaComponent } from './components/agenda/agenda.component';
+import { AgendaItemComponent } from './components/agenda-item/agenda-item.component';
+import { TimePipe } from './pipes/time.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PagenotfoundComponent,
     HomeComponent,
-    AgendaComponent
+    AgendaComponent,
+    AgendaItemComponent,
+    TimePipe
   ],
   imports: [
     BrowserModule,

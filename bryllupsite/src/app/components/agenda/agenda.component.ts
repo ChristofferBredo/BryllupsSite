@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Time } from "@angular/common";
+import { AgendaItem } from '../agenda-item/agenda-item';
 
 @Component({
   selector: 'agenda-comp',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./agenda.component.css']
 })
 export class AgendaComponent {
+
+  agendaItems : AgendaItem[] = [
+    {
+      time: {hours: 15, minutes: 30},
+      description: "Hello World"
+    }
+  ] 
 
 }

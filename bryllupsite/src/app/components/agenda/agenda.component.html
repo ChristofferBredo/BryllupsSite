@@ -11,11 +11,8 @@
         </div>
         <div class="col-1"></div>
     </div>
-    <div class="row">
-        <div class="body-text col-12">
-            Agenda brødtekst
-        </div>
-        
-    </div>
+    <li *ngFor="let item of agendaItems">
+        <app-agenda-item [agendaItem]="item"></app-agenda-item>
+    </li>
     
 </div>
