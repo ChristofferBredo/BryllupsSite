@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TimePipe } from 'src/app/pipes/time.pipe';
 import { AgendaItemComponent } from './agenda-item.component';
 import { AgendaItem } from './agenda-item';
-import { Time } from '@angular/common';
 import { MockComponent, MockPipe } from 'ng-mocks';
 
 describe('AgendaItemComponent', () => {

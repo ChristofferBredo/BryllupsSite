@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MockComponent } from 'ng-mocks';
-import { TimePipe } from 'src/app/pipes/time.pipe';
 import { AgendaItemComponent } from '../agenda-item/agenda-item.component';
 
 import { AgendaComponent } from './agenda.component';
