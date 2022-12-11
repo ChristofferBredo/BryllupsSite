@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TimePipe } from 'src/app/pipes/time.pipe';
+import { AgendaItemComponent } from '../agenda-item/agenda-item.component';
 
 import { AgendaComponent } from './agenda.component';
 
@@ -8,7 +10,7 @@ describe('AgendaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AgendaComponent ]
+      declarations: [ AgendaComponent, AgendaItemComponent, TimePipe ]
     })
     .compileComponents();
 

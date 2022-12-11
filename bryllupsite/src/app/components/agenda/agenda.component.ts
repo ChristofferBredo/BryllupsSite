@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Time } from "@angular/common";
 import { AgendaItem } from '../agenda-item/agenda-item';
 
 @Component({
@@ -12,7 +11,7 @@ export class AgendaComponent {
   agendaItems : AgendaItem[] = [
     {
       time: {hours: 15, minutes: 30},
-      description: "Hello World"
+      description: "Reception"
     }
   ] 
 

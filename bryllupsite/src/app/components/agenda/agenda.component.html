@@ -11,8 +11,11 @@
         </div>
         <div class="col-1"></div>
     </div>
-    <li *ngFor="let item of agendaItems">
-        <app-agenda-item [agendaItem]="item"></app-agenda-item>
-    </li>
+    <ul class="agenda">
+        <li *ngFor="let item of agendaItems">
+            <app-agenda-item [agendaItem]="item"></app-agenda-item>
+        </li>
+    </ul>
+    
     
 </div>
