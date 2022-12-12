@@ -23,9 +23,13 @@ hr.rounded-bold{
   border-radius: 1px;
 }
 
+.container{
+  margin-bottom: 10%;
+}
+
 .container-border {
   border: 2px solid #53402F;
-  margin: auto 20% 10%;
+  margin: auto 20%;
 }
 
 .header-title{
