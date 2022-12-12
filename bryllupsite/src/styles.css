@@ -6,12 +6,26 @@ a {
 }
 
 hr.solid{
-  border-top: 2px solid #53402F;
+  border-top: 2px solid #b85600;
+}
+
+hr.solid-light{
+  border-top: 1px solid #b85600;
+  height: 1px;
+}
+
+hr.solid-bold{
+  border-top: 3px solid #b85600;
+}
+
+hr.rounded-bold{
+  border-top: 3px solid #b85600;
+  border-radius: 1px;
 }
 
 .container-border {
   border: 2px solid #53402F;
-  margin: auto 25%;
+  margin: auto 20%;
 }
 
 .header-title{

@@ -7,7 +7,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TimePipe implements PipeTransform {
 
   transform(value: Time): string {
-    return `${value.hours}:${value.minutes}`;
+    var hours = value.hours == 0 ? "00" : value.hours.toString();
+    var minutes = value.minutes == 0 ? "00" : value.minutes.toString();
+    return `${hours}:${minutes}`;
   }
 
 }
