@@ -20,6 +20,11 @@
   margin-right: 14px;
 }
 
+.nav-link {
+  font-size: large;
+  cursor: pointer;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
   .custom-navbar-title{
@@ -30,34 +35,7 @@
     margin-right: 15px;
     text-align: left;
   }
-
-  .card-container > *:not(.circle-link) ,
-  .terminal {
-    width: 100%;
-  }
-
-  .card:not(.highlight-card) {
-    height: 16px;
-    margin: 8px 0;
-  }
-
-  .card.highlight-card span {
-    margin-left: 72px;
-  }
-
-  svg#rocket-smoke {
-    right: 120px;
-    transform: rotate(-5deg);
-  }
 }
-
-.nav-link {
-    font-size: large;
-    cursor: pointer;
-  }
   
-  .navbar-light .navbar-nav .nav-link.active {
-    color: #007ACC
-  }
   
   

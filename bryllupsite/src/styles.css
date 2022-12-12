@@ -25,7 +25,7 @@ hr.rounded-bold{
 
 .container-border {
   border: 2px solid #53402F;
-  margin: auto 20%;
+  margin: auto 20% 10%;
 }
 
 .header-title{
@@ -43,7 +43,7 @@ hr.rounded-bold{
 @media screen and (max-width: 767px) {
   
   .container-border{
-    margin: auto 10%;
+    margin: auto 10% 10%;
   }
 
   .header-title{

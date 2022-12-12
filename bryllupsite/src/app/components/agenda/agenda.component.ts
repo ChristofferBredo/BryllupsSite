@@ -20,6 +20,22 @@ export class AgendaComponent {
     {
       time: {hours: 0, minutes: 0},
       description: "Der er mega fest"
+    },
+    {
+      time: {hours: 16, minutes: 0},
+      description: "Kage ved det festlige højbord"
+    },
+    {
+      time: {hours: 0, minutes: 0},
+      description: "Der er mega fest"
+    },
+    {
+      time: {hours: 16, minutes: 0},
+      description: "Kage ved det festlige højbord"
+    },
+    {
+      time: {hours: 0, minutes: 0},
+      description: "Der er mega fest"
     }
   ] 
 
