@@ -3,6 +3,7 @@ import { AgendaComponent } from '../components/agenda/agenda.component';
 import {MockComponent} from 'ng-mocks';
 
 import { HomeComponent } from './home.component';
+import { LocationComponent } from '../components/location/location.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -12,7 +13,8 @@ describe('HomeComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ 
         HomeComponent,
-        MockComponent(AgendaComponent)
+        MockComponent(AgendaComponent),
+        MockComponent(LocationComponent)
       ]
     })
     .compileComponents();
