@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { AgendaItem } from '../agenda-item/agenda-item';
 
 @Component({
-  selector: 'agenda-comp',
+  selector: 'app-agenda',
   templateUrl: './agenda.component.html',
   styleUrls: ['./agenda.component.css']
 })

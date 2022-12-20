@@ -32,6 +32,24 @@ hr.rounded-bold{
   margin: auto 20%;
 }
 
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-container img {
+  margin: auto;
+  display: block;
+}
+
+.image-container .center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .header-title{
   font-family: "Playfair Display";
   font-size: xx-large;

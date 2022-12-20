@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { AgendaItemComponent } from './components/agenda-item/agenda-item.component';
 import { TimePipe } from './pipes/time.pipe';
+import { LocationComponent } from './components/location/location.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TimePipe } from './pipes/time.pipe';
     HomeComponent,
     AgendaComponent,
     AgendaItemComponent,
-    TimePipe
+    TimePipe,
+    LocationComponent
   ],
   imports: [
     BrowserModule,
