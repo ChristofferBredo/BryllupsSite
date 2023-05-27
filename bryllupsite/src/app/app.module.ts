@@ -10,6 +10,13 @@ import { AgendaComponent } from './components/agenda/agenda.component';
 import { AgendaItemComponent } from './components/agenda-item/agenda-item.component';
 import { TimePipe } from './pipes/time.pipe';
 import { LocationComponent } from './components/location/location.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +26,19 @@ import { LocationComponent } from './components/location/location.component';
     AgendaComponent,
     AgendaItemComponent,
     TimePipe,
-    LocationComponent
+    LocationComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

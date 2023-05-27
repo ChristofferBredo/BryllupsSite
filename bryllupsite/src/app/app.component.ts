@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as WebFont from 'webfontloader';
-import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +8,6 @@ import {faBars} from '@fortawesome/free-solid-svg-icons';
 })
 
 export class AppComponent implements OnInit {
-  title = 'Wessman & Lillelund';
-
-  faBars = faBars;
-
   ngOnInit(): void {
     WebFont.load({
       google: {

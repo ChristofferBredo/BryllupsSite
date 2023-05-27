@@ -1,15 +1,4 @@
-<nav class="custom-navbar navbar sticky-top">
-  <a class="custom-navbar-title"
-    [routerLink]="['/']"
-    routerLinkActive="active">
-    {{title}}
-  </a>
-  <fa-icon class="nav-link custom-navbar-menu"
-          [icon]="faBars"
-          size="xl"
-          [routerLink]="['/products/alternate']"
-          routerLinkActive="active"></fa-icon>
-</nav>
+<app-nav-bar></app-nav-bar>
 
 <div class="container">
   <router-outlet></router-outlet>
