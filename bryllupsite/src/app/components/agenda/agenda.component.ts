@@ -4,9 +4,11 @@ import { AgendaItem } from '../agenda-item/agenda-item';
 @Component({
   selector: 'app-agenda',
   templateUrl: './agenda.component.html',
-  styleUrls: ['./agenda.component.css']
+  styleUrls: ['./agenda.component.scss']
 })
 export class AgendaComponent {
+
+  agendaTitle = "Agenda";
 
   agendaItems : AgendaItem[] = [
     {
