@@ -55,8 +55,14 @@ resource bryllupstorage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   }
 }
 
+resource blobService 'Microsoft.Storage/storageAccounts/blobServices@2022-05-01' = {
+  parent: bryllupstorage
+  name: 'default'
+}
+
 resource webContainer 'Microsoft.Storage/storageAccounts/blobServices/containers@2022-05-01' = {
-  name: '${bryllupstorage.name}/default/$web'
+  parent: blobService
+  name: '$web'
 }
 
 // Create contributor role for deployment script
