@@ -3,6 +3,8 @@
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
 // Plus imports for other components in your app.
+@use './app/components/agenda/agenda.component-theme.scss' as agenda;
+
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -15,6 +17,9 @@
 
 $bryllupsite-primary: mat.define-palette(mat.$light-green-palette);
 $bryllupsite-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$bryllupsite-typography: mat.define-typography-config(
+  $font-family: 'Playfair display',
+);
 
 // The warn palette is optional (defaults to red).
 $bryllupsite-warn: mat.define-palette(mat.$red-palette);
@@ -26,11 +31,12 @@ $bryllupsite-theme: mat.define-light-theme((
     primary: $bryllupsite-primary,
     accent: $bryllupsite-accent,
     warn: $bryllupsite-warn,
-  )
+  ),
+  typography: $bryllupsite-typography,
 ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($bryllupsite-theme);
-
+@include agenda.theme($bryllupsite-theme);

@@ -2,7 +2,6 @@
     margin: auto 20%;
     
     list-style: none;
-    font-family: 'Playfair display';
     font-size: large;
     padding-left: 10%;
     padding-right: 10%;
@@ -10,9 +9,7 @@
     display: flex;
 
     mat-card-header {
-        font-family: "Playfair Display";
         font-size: xx-large;
-        color: #53402F;
         justify-content: center; /* align horizontal */
         align-items: center; /* align vertical */
     }
@@ -26,7 +23,6 @@
 
 ul.agenda {
     list-style: none;
-    font-family: 'Playfair display';
     font-size: large;
     padding-left: 10%;
     padding-right: 10%;
