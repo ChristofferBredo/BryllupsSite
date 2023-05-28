@@ -3,6 +3,9 @@ import { MockComponent } from 'ng-mocks';
 import { AgendaItemComponent } from '../agenda-item/agenda-item.component';
 
 import { AgendaComponent } from './agenda.component';
+import { MatCard, MatCardHeader } from '@angular/material/card';
+import { MatDivider } from '@angular/material/divider';
+import { MatList, MatListItem } from '@angular/material/list';
 
 describe('AgendaComponent', () => {
   let component: AgendaComponent;
@@ -12,7 +15,12 @@ describe('AgendaComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ 
         AgendaComponent, 
-        MockComponent(AgendaItemComponent)  
+        MockComponent(AgendaItemComponent),
+        MatCard,
+        MatCardHeader,
+        MatDivider,
+        MatList,
+        MatListItem
       ]
     })
     .compileComponents();
