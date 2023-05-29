@@ -2,14 +2,30 @@
     <mat-card-header class="row col-12">
         {{agendaTitle}}
     </mat-card-header>
-    <mat-divider></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let item of agendaItems">
-                <app-agenda-item [agendaItem]="item"></app-agenda-item>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
+    <mat-grid-list cols="12" rowHeight="fit" style="height: 400px;">
+        <mat-grid-tile [colspan]="3" [rowspan]="1">
+            <img style="width: auto;
+            height: 100%;
+            margin: auto;
+            display: block;" src="assets/images/Stickwing_flipped.png">
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="6" [rowspan]="1">
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item *ngFor="let item of agendaItems">
+                        <app-agenda-item [agendaItem]="item"></app-agenda-item>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="3" [rowspan]="1">
+            <img style="width: auto;
+            height: 100%;
+            margin: auto;
+            display: block;" src="assets/images/Stickwing.png">
+        </mat-grid-tile>
+    </mat-grid-list>
+    
 </mat-card>
 
 

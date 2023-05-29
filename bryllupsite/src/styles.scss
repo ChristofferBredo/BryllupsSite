@@ -11,18 +11,15 @@ $primary-palette: map.get($color-config, 'primary');
 $secondary-palette: map.get($color-config, 'accent');
 
 .container{
-  margin: auto 20%;
-  margin-bottom: 10%;
+  margin: auto;
+  margin-bottom: 20px;
   font-size: large;
-  padding-left: 10%;
-  padding-right: 10%;
 
-  .border {
-      border: 2px solid #53402F;
-  }
 }
 
 mat-card-header {
+  padding-left: 10%;
+  padding-right: 10%;
   font-size: xx-large;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
@@ -38,6 +35,8 @@ mat-card-content {
   text-align: center;
   color: white;
   img {
+    width: 100%;
+    height: auto;
     margin: auto;
     display: block;
   }
