@@ -1,17 +1,19 @@
-<mat-card class="agenda-container">
+<mat-card class="container border">
     <mat-card-header class="row col-12">
         {{agendaTitle}}
     </mat-card-header>
     <mat-divider></mat-divider>
-    <mat-list>
-        <mat-list-item *ngFor="let item of agendaItems">
-            <app-agenda-item [agendaItem]="item"></app-agenda-item>
-        </mat-list-item>
-    </mat-list>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let item of agendaItems">
+                <app-agenda-item [agendaItem]="item"></app-agenda-item>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
 </mat-card>
 
 
-<div class="container-border">
+<div class="container border">
     <div class="row">
         <div class="header-title col-12">
             Agenda

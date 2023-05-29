@@ -1,61 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use 'sass:map';
+@use "./custom-theme.scss" as theme;
+
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
-a {
-  text-decoration: none; 
-}
+$color-config: mat.get-color-config(theme.$bryllupsite-theme);
 
-hr.solid{
-  border-top: 2px solid #b85600;
-}
-
-hr.solid-light{
-  border-top: 1px solid #b85600;
-  height: 1px;
-}
-
-hr.solid-bold{
-  border-top: 3px solid #b85600;
-}
-
-hr.rounded-bold{
-  border-top: 3px solid #b85600;
-  border-radius: 1px;
-}
+$primary-palette: map.get($color-config, 'primary');
+$secondary-palette: map.get($color-config, 'accent');
 
 .container{
+  margin: auto 20%;
   margin-bottom: 10%;
+  font-size: large;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  .border {
+      border: 2px solid #53402F;
+  }
 }
 
-.container-border {
-  border: 2px solid #53402F;
-  margin: auto 20%;
+mat-card-header {
+  font-size: xx-large;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+mat-card-content { 
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .image-container {
   position: relative;
   text-align: center;
   color: white;
-}
+  img {
+    margin: auto;
+    display: block;
+  }
 
-.image-container img {
-  margin: auto;
-  display: block;
-}
-
-.image-container .center-text {
+  .center-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+  }
 
-.header-title{
-  font-family: "Playfair Display";
-  font-size: xx-large;
-  text-align: center;
-  color: #53402F;
 }
 
 .body-text{
@@ -65,12 +58,13 @@ hr.rounded-bold{
 
 @media screen and (max-width: 767px) {
   
-  .container-border{
-    margin: auto 10% 10%;
-  }
-
-  .header-title{
+  mat-card-header {
     font-size: x-large;
   }
 
+  .container {
+    .border {
+      margin: auto 10% 10%;
+    }
+  }
 }
