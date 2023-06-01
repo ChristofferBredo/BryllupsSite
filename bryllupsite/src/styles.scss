@@ -15,44 +15,61 @@ body {
 }
 
 .container{
-  margin: auto;
   margin-bottom: 20px;
   font-size: large;
+}
 
+ul {
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: block;
+  }
 }
 
 mat-card-header {
-  padding-left: 10%;
-  padding-right: 10%;
-  font-size: xx-large;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
+  margin: 5px 20px 5px 20px;
 }
 
 mat-card-content { 
-  padding-left: 5%;
-  padding-right: 5%;
+  margin: 5px;
+}
+
+.header {
+  font-size: xx-large;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 
 .image-container {
   position: relative;
   text-align: center;
   color: white;
-  img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: block;
-  }
 
   .center-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
 }
+
+.scale-with-width{
+  width: auto;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+.scale-with-height{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
 
 .body-text{
   text-align: center;
@@ -67,7 +84,7 @@ mat-card-content {
 
   .container {
     .border {
-      margin: auto 10% 10%;
+      
     }
   }
 }

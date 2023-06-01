@@ -50,6 +50,12 @@ $bryllupsite-theme: mat.define-light-theme((
     * {
         color:  mat.get-color-from-palette($secondary-palette, 900);
     }
+
+    a {
+        &:hover {
+            color: mat.get-color-from-palette($primary-palette, 600);
+        }
+    }
 }
 
 @mixin typography($bryllupsite-theme) {
@@ -60,6 +66,17 @@ $bryllupsite-theme: mat.define-light-theme((
 
     * {
         font-family: $font-family;
+    }
+
+    .light-font {
+        font-weight: lighter;
+    }
+
+    .bold-font {
+        font-weight: bold;
+    }
+    .bolder-font {
+        font-weight: bolder;
     }
 }
 

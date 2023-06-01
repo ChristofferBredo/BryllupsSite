@@ -1,17 +1,11 @@
 .agenda-item{
-    padding: 0 10%;
+    padding: 0 5%;
 }
 
-.agenda-time{
-    font-weight: bold;
-}
-
-.agenda-desc{
-    font-weight: lighter;
-}
-
-.agenda-divider{
-    font-weight: bolder;
+.agenda-item-time {
+    align-items: center;
+    justify-content: center;
+    font-size: large;
 }
 
 @media screen and (max-width: 767px) {

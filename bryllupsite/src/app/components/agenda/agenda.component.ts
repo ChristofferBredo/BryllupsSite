@@ -13,31 +13,19 @@ export class AgendaComponent {
   agendaItems : AgendaItem[] = [
     {
       time: {hours: 15, minutes: 30},
+      description: "Ankomst til Rødvig Kro"
+    },
+    {
+      time: {hours: 16, minutes: 0},
+      description: "Borgerlig vielse i parken"
+    },
+    {
+      time: {hours: 0, minutes: 0},
       description: "Reception"
     },
     {
       time: {hours: 16, minutes: 0},
-      description: "Kage ved det festlige højbord"
-    },
-    {
-      time: {hours: 0, minutes: 0},
-      description: "Der er mega fest"
-    },
-    {
-      time: {hours: 16, minutes: 0},
-      description: "Kage ved det festlige højbord"
-    },
-    {
-      time: {hours: 0, minutes: 0},
-      description: "Der er mega fest"
-    },
-    {
-      time: {hours: 16, minutes: 0},
-      description: "Kage ved det festlige højbord"
-    },
-    {
-      time: {hours: 0, minutes: 0},
-      description: "Der er mega fest"
+      description: "Vi går til bords"
     }
   ] 
 

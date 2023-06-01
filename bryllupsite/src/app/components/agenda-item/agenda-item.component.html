@@ -1,14 +1,9 @@
 <div class="agenda-item">
-    <div class="row body-text">
-        <div class="col-md-5 agenda-time">
-            {{agendaItem.time | time}}
-        </div>
-        <div class="col-md-2 agenda-divider">
-            <hr class="rounded-bold">
-        </div>
-        <div class="col-md-5 agenda-desc">
-            {{agendaItem.description}}
-        </div> 
+    <div class="bold-font agenda-item-time">
+        {{agendaItem.time | time}}
     </div>
-    <hr class="solid-light">
+    <div class="light-font">
+        {{agendaItem.description}}
+    </div> 
+    <mat-divider></mat-divider>
 </div>
