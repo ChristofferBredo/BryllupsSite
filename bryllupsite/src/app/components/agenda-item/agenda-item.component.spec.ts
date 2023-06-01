@@ -3,6 +3,7 @@ import { TimePipe } from 'src/app/pipes/time.pipe';
 import { AgendaItemComponent } from './agenda-item.component';
 import { AgendaItem } from './agenda-item';
 import { MockComponent, MockPipe } from 'ng-mocks';
+import { MatDivider } from '@angular/material/divider';
 
 describe('AgendaItemComponent', () => {
   let component: AgendaItemComponent;
@@ -12,7 +13,8 @@ describe('AgendaItemComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ 
         AgendaItemComponent,
-        MockPipe(TimePipe)
+        MockPipe(TimePipe),
+        MatDivider
       ]
     })
     .compileComponents();

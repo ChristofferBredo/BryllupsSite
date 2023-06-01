@@ -21,8 +21,6 @@ describe('AgendaComponent', () => {
         MatCardHeader,
         MatCardContent,
         MatDivider,
-        MatList,
-        MatListItem,
         MatGridList,
         MatGridTile
       ]
