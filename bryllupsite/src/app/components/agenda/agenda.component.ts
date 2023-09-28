@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AgendaItem } from '../agenda-item/agenda-item';
+import { AgendaService } from 'src/app/services/agenda.service';
 
 @Component({
   selector: 'app-agenda',
@@ -8,25 +9,12 @@ import { AgendaItem } from '../agenda-item/agenda-item';
 })
 export class AgendaComponent {
 
+  constructor(private agendaService: AgendaService){
+
+  }
+
   agendaTitle = "Agenda";
 
-  agendaItems : AgendaItem[] = [
-    {
-      time: {hours: 15, minutes: 30},
-      description: "Ankomst til Rødvig Kro"
-    },
-    {
-      time: {hours: 16, minutes: 0},
-      description: "Borgerlig vielse i parken"
-    },
-    {
-      time: {hours: 0, minutes: 0},
-      description: "Reception"
-    },
-    {
-      time: {hours: 16, minutes: 0},
-      description: "Vi går til bords"
-    }
-  ] 
-
+  agendaItems = this.agendaService.GetAgendaItems();
+  
 }
