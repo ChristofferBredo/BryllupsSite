@@ -1,0 +1,29 @@
+name: Build and Test app
+
+on: 
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+    BuildAndTest:
+        name: Build and test app
+        runs-on: ubuntu-latest
+        defaults: 
+          run: 
+            working-directory: bryllupsite
+        steps:
+
+        - name: Checkout code
+          uses: actions/checkout@main
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '16'
+
+        - name: Install dependencies
+          run: npm install
+
+        - name: Run tests
+          run: npm run test:headless

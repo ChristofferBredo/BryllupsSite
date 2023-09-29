@@ -1,9 +1,8 @@
-<mat-toolbar>
-  <a [routerLink]="['/']"
-  routerLinkActive="active">
-  {{title}}
+<mat-toolbar *ngIf="isMobile">
+  <a [routerLink]="['/']" routerLinkActive="active">
+    {{title}}
   </a>
-  <button mat-icon-button>
+  <button class="menu" mat-icon-button>
     <mat-icon fontSet="fa" fontIcon="fa-bars"
             [routerLink]="['/products/alternate']"
             routerLinkActive="active">

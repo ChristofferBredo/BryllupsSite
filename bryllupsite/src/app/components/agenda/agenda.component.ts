@@ -1,32 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AgendaItem } from '../agenda-item/agenda-item';
+import { AgendaService } from 'src/app/services/agenda.service';
 
 @Component({
   selector: 'app-agenda',
   templateUrl: './agenda.component.html',
   styleUrls: ['./agenda.component.scss']
 })
-export class AgendaComponent {
-
+export class AgendaComponent implements OnInit{
   agendaTitle = "Agenda";
+  agendaItems: AgendaItem[] = [];
 
-  agendaItems : AgendaItem[] = [
-    {
-      time: {hours: 15, minutes: 30},
-      description: "Ankomst til Rødvig Kro"
-    },
-    {
-      time: {hours: 16, minutes: 0},
-      description: "Borgerlig vielse i parken"
-    },
-    {
-      time: {hours: 0, minutes: 0},
-      description: "Reception"
-    },
-    {
-      time: {hours: 16, minutes: 0},
-      description: "Vi går til bords"
-    }
-  ] 
+  constructor(
+    private agendaService: AgendaService){
 
+  }
+  ngOnInit(): void {
+    this.agendaItems = this.agendaService.GetAgendaItems();
+  }
 }
