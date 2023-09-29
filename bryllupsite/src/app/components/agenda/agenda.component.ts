@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AgendaItem } from '../agenda-item/agenda-item';
 import { AgendaService } from 'src/app/services/agenda.service';
 
@@ -7,14 +7,15 @@ import { AgendaService } from 'src/app/services/agenda.service';
   templateUrl: './agenda.component.html',
   styleUrls: ['./agenda.component.scss']
 })
-export class AgendaComponent {
+export class AgendaComponent implements OnInit{
+  agendaTitle = "Agenda";
+  agendaItems: AgendaItem[] = [];
 
-  constructor(private agendaService: AgendaService){
+  constructor(
+    private agendaService: AgendaService){
 
   }
-
-  agendaTitle = "Agenda";
-
-  agendaItems = this.agendaService.GetAgendaItems();
-  
+  ngOnInit(): void {
+    this.agendaItems = this.agendaService.GetAgendaItems();
+  }
 }

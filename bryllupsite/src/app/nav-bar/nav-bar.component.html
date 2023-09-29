@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar *ngIf="isMobile">
   <a [routerLink]="['/']"
   routerLinkActive="active">
   {{title}}
