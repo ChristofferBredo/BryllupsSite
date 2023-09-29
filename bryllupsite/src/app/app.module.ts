@@ -19,6 +19,7 @@ import { MatListModule } from '@angular/material/list';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MatCardModule } from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { CoverComponent } from './components/cover/cover.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AgendaItemComponent,
     TimePipe,
     LocationComponent,
-    NavBarComponent
+    NavBarComponent,
+    CoverComponent
   ],
   imports: [
     BrowserModule,

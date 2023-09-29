@@ -17,6 +17,7 @@ body {
 .container{
   margin-bottom: 20px;
   font-size: large;
+  max-width: 800px;
 }
 
 ul {
@@ -46,14 +47,14 @@ mat-card-content {
   position: relative;
   text-align: center;
   color: white;
+  overflow: hidden;
+}
 
-  .center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .scale-with-width{

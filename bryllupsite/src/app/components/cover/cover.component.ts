@@ -1,18 +1,17 @@
-import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nav-bar',
-  templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss']
+  selector: 'app-cover',
+  templateUrl: './cover.component.html',
+  styleUrls: ['./cover.component.scss']
 })
-export class NavBarComponent implements OnInit {
-  title = 'C & L';
+export class CoverComponent implements OnInit {
+  coverText = 'Christoffer og Laura'
+  coverSubText = '10. August 2024'
   isMobile = false;
+  constructor(private breakpointObserver : BreakpointObserver) {}
 
-  constructor(private breakpointObserver : BreakpointObserver) {  }
-  
   ngOnInit(): void {
     this.breakpointObserver.observe(['(min-width: 767px)'])
       .subscribe((state: BreakpointState) => {
@@ -23,5 +22,5 @@ export class NavBarComponent implements OnInit {
         }
       })
   }
+  
 }
-
