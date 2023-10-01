@@ -16,10 +16,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MatCardModule } from '@angular/material/card';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatTabsModule } from '@angular/material/tabs';
 import { CoverComponent } from './components/cover/cover.component';
+import { NavtabsComponent } from './components/navtabs/navtabs.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import { CoverComponent } from './components/cover/cover.component';
     TimePipe,
     LocationComponent,
     NavBarComponent,
-    CoverComponent
+    CoverComponent,
+    NavtabsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import { CoverComponent } from './components/cover/cover.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatMenuModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,11 +4,15 @@
         <h1>{{coverText}}</h1>
         <h2>{{coverSubText}}</h2>
     </div>
+    <app-navtabs></app-navtabs>
 </div>
-<div *ngIf="isMobile" class="container image-container">
-    <img class="cover-image-mobile" src="assets/images/FlowerCover_TopHalf_4x.png" alt="Cover image with watercolor painted flowers">
-    <div style="margin-top: -10px;">
-        <h1>{{coverText}}</h1>
-        <h2>{{coverSubText}}</h2>
+<div *ngIf="isMobile">
+    <app-nav-bar></app-nav-bar>
+    <div class="container image-container">
+        <img class="cover-image-mobile" src="assets/images/FlowerCover_TopHalf_4x.png" alt="Cover image with watercolor painted flowers">
+        <div style="margin-top: -10px;">
+            <h1>{{coverText}}</h1>
+            <h2>{{coverSubText}}</h2>
+        </div>
     </div>
 </div>

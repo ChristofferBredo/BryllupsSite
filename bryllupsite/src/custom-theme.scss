@@ -14,7 +14,7 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 
-$bryllupsite-primary: mat.define-palette(mat.$light-green-palette);
+$bryllupsite-primary: mat.define-palette(mat.$green-palette, 900);
 $bryllupsite-accent: mat.define-palette(mat.$brown-palette, 500);
 $bryllupsite-typography: mat.define-typography-config(
   $font-family: 'Playfair display',

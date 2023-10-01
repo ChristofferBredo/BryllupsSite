@@ -1,0 +1,13 @@
+<mat-toolbar *ngIf="isMobile">
+  <a [routerLink]="['/']" routerLinkActive="active">
+    {{title}}
+  </a>
+  <button class="menu" mat-icon-button [mat-menu-trigger-for]="menu">
+    <mat-icon fontSet="fa" fontIcon="fa-bars" />
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      Click me
+    </button>
+  </mat-menu>
+</mat-toolbar>
