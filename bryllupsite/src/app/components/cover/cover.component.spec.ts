@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CoverComponent } from './cover.component';
+import { MockComponent } from 'ng-mocks';
+import { NavtabsComponent } from '../navtabs/navtabs.component';
 
 describe('CoverComponent', () => {
   let component: CoverComponent;
@@ -8,7 +10,9 @@ describe('CoverComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CoverComponent]
+      declarations: [
+        CoverComponent,
+        MockComponent(NavtabsComponent)]
     });
     fixture = TestBed.createComponent(CoverComponent);
     component = fixture.componentInstance;

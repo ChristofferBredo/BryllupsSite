@@ -6,8 +6,8 @@
     <mat-icon fontSet="fa" fontIcon="fa-bars" />
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      Click me
-    </button>
+    <a mat-menu-item *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive="active">
+      {{link.label}}
+    </a>
   </mat-menu>
 </mat-toolbar>
