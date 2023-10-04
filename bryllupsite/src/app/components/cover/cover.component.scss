@@ -2,6 +2,13 @@
     max-width: 600px;
 }
 
-.cover-image-mobile{
+.cover-image-mobile {
     max-width: 400px;
+}
+
+.cover-center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
 }

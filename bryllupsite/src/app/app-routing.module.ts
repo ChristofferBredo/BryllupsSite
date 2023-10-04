@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AgendaComponent } from './components/agenda/agenda.component';
+import { LocationComponent } from './components/location/location.component';
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'Agenda', component: AgendaComponent },
+  { path: 'Location', component: LocationComponent },
 
   // Redirect empty path to Home
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
