@@ -1,9 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { AgendaComponent } from '../components/agenda/agenda.component';
-import {MockComponent} from 'ng-mocks';
+import { AgendaComponent } from '../agenda/agenda.component';
+import { MockComponent } from 'ng-mocks';
 
 import { HomeComponent } from './home.component';
-import { LocationComponent } from '../components/location/location.component';
+import { LocationComponent } from '../location/location.component';
+import { HomeItemComponent } from './home-item/home-item.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -11,13 +12,13 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ 
+      declarations: [
         HomeComponent,
-        MockComponent(AgendaComponent),
-        MockComponent(LocationComponent)
-      ]
+        MockComponent(HomeItemComponent)
+      ],
+      
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
