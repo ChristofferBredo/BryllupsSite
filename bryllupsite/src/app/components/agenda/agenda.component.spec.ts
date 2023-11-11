@@ -5,7 +5,6 @@ import { AgendaItemComponent } from '../agenda-item/agenda-item.component';
 import { AgendaComponent } from './agenda.component';
 import { MatCard, MatCardContent, MatCardHeader } from '@angular/material/card';
 import { MatDivider } from '@angular/material/divider';
-import { MatList, MatListItem } from '@angular/material/list';
 import { MatGridList, MatGridTile } from '@angular/material/grid-list';
 
 describe('AgendaComponent', () => {
@@ -14,8 +13,8 @@ describe('AgendaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ 
-        AgendaComponent, 
+      declarations: [
+        AgendaComponent,
         MockComponent(AgendaItemComponent),
         MatCard,
         MatCardHeader,
@@ -25,7 +24,7 @@ describe('AgendaComponent', () => {
         MatGridTile
       ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(AgendaComponent);
     component = fixture.componentInstance;
