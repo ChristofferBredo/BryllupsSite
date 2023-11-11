@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { LocationComponent } from './components/location/location.component';

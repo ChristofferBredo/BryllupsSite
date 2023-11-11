@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { AgendaItemComponent } from './components/agenda-item/agenda-item.component';
@@ -23,6 +23,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CoverComponent } from './components/cover/cover.component';
 import { NavtabsComponent } from './components/navtabs/navtabs.component';
+import { HomeItemComponent } from './components/home/home-item/home-item.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NavtabsComponent } from './components/navtabs/navtabs.component';
     LocationComponent,
     NavBarComponent,
     CoverComponent,
-    NavtabsComponent
+    NavtabsComponent,
+    HomeItemComponent
   ],
   imports: [
     BrowserModule,

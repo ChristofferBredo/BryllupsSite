@@ -35,3 +35,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - Wish list (Ønskeskyen link? og gavekoordinator)
 - Toasmaster information - med information om ønskede indslag
 - Efter bryllupet: Fotos fra festen?
+- 'footer' med initialer og dato

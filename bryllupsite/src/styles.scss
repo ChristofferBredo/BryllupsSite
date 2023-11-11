@@ -14,10 +14,15 @@ body {
   background-image: url('assets/images/white_wall_hash.png');
 }
 
-.container{
-  margin-bottom: 20px;
+.container {
   font-size: large;
   max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.intro-container {
+  font-size: medium;
+  margin: 0 5% 20px;
 }
 
 ul {
@@ -33,14 +38,16 @@ mat-card-header {
   margin: 5px 20px 5px 20px;
 }
 
-mat-card-content { 
+mat-card-content {
   margin: 5px;
 }
 
 .header {
   font-size: xx-large;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
 }
 
 .image-container {
@@ -57,14 +64,14 @@ mat-card-content {
   transform: translate(-50%, -50%);
 }
 
-.scale-with-width{
+.scale-with-width {
   width: auto;
   height: 100%;
   margin: auto;
   display: block;
 }
 
-.scale-with-height{
+.scale-with-height {
   width: 100%;
   height: auto;
   margin: auto;
@@ -72,20 +79,40 @@ mat-card-content {
 }
 
 
-.body-text{
+.body-text {
   text-align: center;
 }
 
+.vertical-divider {
+  height: 100%;
+  border-left-width: 10px;
+}
+
+.flower-home-image {
+  margin-top: -32px;
+  margin-bottom: -40px;
+  z-index: 1;
+}
+
+.navigation-button {
+  font-size: large;
+}
 
 @media screen and (max-width: 767px) {
-  
+
   mat-card-header {
     font-size: x-large;
   }
 
   .container {
-    .border {
-      
-    }
+    font-size: large;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+
+  .flower-home-image {
+    margin-top: -20px;
+    margin-bottom: -40px;
+    z-index: 1;
   }
 }
