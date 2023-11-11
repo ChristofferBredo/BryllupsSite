@@ -11,7 +11,7 @@ import { HomeitemService } from 'src/app/services/homeitem.service';
 export class HomeComponent implements OnInit {
   homeItems: HomeItem[] = []
 
-  constructor(private homeItemService : HomeitemService) {}
+  constructor(private homeItemService: HomeitemService) { }
   ngOnInit(): void {
     this.homeItems = this.homeItemService.GetHomeItems()
   }

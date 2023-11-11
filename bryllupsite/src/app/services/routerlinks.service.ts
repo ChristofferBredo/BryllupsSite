@@ -10,7 +10,7 @@ import { LocationComponent } from '../components/location/location.component';
 export class RouterlinksService {
 
   links: Link[] = [
-    { path: "Home", label: "Home", component: HomeComponent },
+    { path: "Home", label: "Forside", component: HomeComponent },
     { path: "Agenda", label: "Tidsplanen", component: AgendaComponent },
     { path: "Location", label: "Lokationen", component: LocationComponent }
   ]

@@ -1,2 +1,43 @@
-<p>Home works!</p>
-<app-home-item *ngFor="let homeItem of homeItems" [homeItem]="homeItem"></app-home-item>
+<mat-card class="container">
+    <img mat-card-image class="scale-with-height" src="assets/images/Laura&Christoffer_2x.jpg">
+    <img mat-card-image class="flower-home-image" src="assets/images/FlowerCoverPink_BottomHalf.png">
+    <mat-card-content style="margin: 10px 5%; padding: 0;">
+        <mat-grid-list cols="11" rowHeight="120px">
+            <mat-grid-tile colspan="5">
+                <mat-list class="container">
+                    <mat-list-item>
+                        <h1 class="center-text">10. August,</h1>
+                        <mat-divider></mat-divider>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <h1 class="center-text">2024</h1>
+                    </mat-list-item>
+                </mat-list>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="1">
+                <!-- <mat-divider [vertical]=" true" class="vertical-divider"></mat-divider> -->
+            </mat-grid-tile>
+            <mat-grid-tile colspan="5">
+                <mat-list class="container">
+                    <mat-list-item>
+                        <h1 class="center-text">Rødvig Kro,</h1>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <h1 class="center-text">Stevns</h1>
+                    </mat-list-item>
+                </mat-list>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-card-content>
+    <mat-divider style="margin: 0 10%;"></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item>
+                <h2 style="text-align: center;">Vielse i parken foran Rødvig Kro</h2>
+            </mat-list-item>
+            <mat-list-item>
+                <h2 class="center-text">Klokken 14:30</h2>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
