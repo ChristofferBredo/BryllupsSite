@@ -88,15 +88,12 @@ mat-card-content {
   border-left-width: 10px;
 }
 
-.flower-home-image {
-  margin-bottom: -40px;
-}
-
 .navigation-button {
   font-size: large;
 }
 
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 650px) {
 
   mat-card-header {
     font-size: x-large;
@@ -106,10 +103,5 @@ mat-card-content {
     font-size: large;
     max-width: 400px;
     margin: 0 auto 20px;
-  }
-
-  .flower-home-image {
-    margin-bottom: -30px;
-    z-index: 1;
   }
 }
