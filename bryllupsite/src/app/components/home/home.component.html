@@ -1,16 +1,18 @@
 <mat-card class="container" style="padding: 0;">
-    <img mat-card-image class="scale-with-height" src="assets/images/Laura&Christoffer_2x.jpg">
-    <img mat-card-image class="flower-home-image" src="assets/images/FlowerCoverPink_BottomHalf.png">
+    <img mat-card-image class="scale-with-height flower-home-image"
+        src="assets/images/Laura&ChristofferWithFlowers.png">
     <mat-card-content style="margin: 10px 5%;">
         <mat-grid-list cols="11" rowHeight="120px">
             <mat-grid-tile colspan="5">
                 <mat-list class="container">
                     <mat-list-item>
-                        <h1 class="center-text">10. August,</h1>
+                        <h1 *ngIf="!isMobile" class="center-text">{{dateText}}</h1>
+                        <h2 *ngIf="isMobile" class="center-text">{{dateText}}</h2>
                         <mat-divider></mat-divider>
                     </mat-list-item>
                     <mat-list-item>
-                        <h1 class="center-text">2024</h1>
+                        <h1 *ngIf="!isMobile" class="center-text">{{yearText}}</h1>
+                        <h2 *ngIf="isMobile" class="center-text">{{yearText}}</h2>
                     </mat-list-item>
                 </mat-list>
             </mat-grid-tile>
@@ -19,10 +21,12 @@
             <mat-grid-tile colspan="5">
                 <mat-list class="container">
                     <mat-list-item>
-                        <h1 class="center-text">Rødvig Kro,</h1>
+                        <h1 *ngIf="!isMobile" class="center-text">{{locationText}}</h1>
+                        <h2 *ngIf="isMobile" class="center-text">{{locationText}}</h2>
                     </mat-list-item>
                     <mat-list-item>
-                        <h1 class="center-text">Stevns</h1>
+                        <h1 *ngIf="!isMobile" class="center-text">{{regionText}}</h1>
+                        <h2 *ngIf="isMobile" class="center-text">{{regionText}}</h2>
                     </mat-list-item>
                 </mat-list>
             </mat-grid-tile>
@@ -30,13 +34,7 @@
     </mat-card-content>
     <mat-divider style="margin: 0 10%;"></mat-divider>
     <mat-card-content>
-        <mat-list>
-            <mat-list-item>
-                <h2 style="text-align: center;">Vielse i parken foran Rødvig Kro</h2>
-            </mat-list-item>
-            <mat-list-item>
-                <h2 class="center-text">Klokken 14:30</h2>
-            </mat-list-item>
-        </mat-list>
+        <mat-card-title class="ceremony-text">{{ceremonyText}}</mat-card-title>
+        <mat-card-title class="ceremony-text">{{timeText}}</mat-card-title>
     </mat-card-content>
 </mat-card>

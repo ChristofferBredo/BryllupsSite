@@ -4,8 +4,7 @@ import { MockComponent } from 'ng-mocks';
 
 import { HomeComponent } from './home.component';
 import { LocationComponent } from '../location/location.component';
-import { HomeItemComponent } from './home-item/home-item.component';
-import { MatCard, MatCardContent } from '@angular/material/card';
+import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { MatGridList, MatGridTile } from '@angular/material/grid-list';
 import { MatList, MatListItem } from '@angular/material/list';
 import { MatDivider } from '@angular/material/divider';
@@ -18,14 +17,14 @@ describe('HomeComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [
         HomeComponent,
-        MockComponent(HomeItemComponent),
         MatCard,
         MatCardContent,
         MatGridList,
         MatGridTile,
         MatList,
         MatListItem,
-        MatDivider
+        MatDivider,
+        MatCardTitle
       ],
 
     })
