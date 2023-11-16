@@ -23,6 +23,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CoverComponent } from './components/cover/cover.component';
 import { NavtabsComponent } from './components/navtabs/navtabs.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NavtabsComponent } from './components/navtabs/navtabs.component';
     LocationComponent,
     NavBarComponent,
     CoverComponent,
-    NavtabsComponent
+    NavtabsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
