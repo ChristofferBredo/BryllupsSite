@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MockComponent } from 'ng-mocks';
 import { CoverComponent } from './components/cover/cover.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -14,7 +15,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         MockComponent(NavBarComponent),
-        MockComponent(CoverComponent)
+        MockComponent(CoverComponent),
+        MockComponent(FooterComponent)
       ],
     }).compileComponents();
   });
