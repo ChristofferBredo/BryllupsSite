@@ -7,12 +7,12 @@ import { AgendaService } from 'src/app/services/agenda.service';
   templateUrl: './agenda.component.html',
   styleUrls: ['./agenda.component.scss']
 })
-export class AgendaComponent implements OnInit{
-  agendaTitle = "Agenda";
+export class AgendaComponent implements OnInit {
+  agendaTitle = "Tidsplanen for dagen";
   agendaItems: AgendaItem[] = [];
 
   constructor(
-    private agendaService: AgendaService){
+    private agendaService: AgendaService) {
 
   }
   ngOnInit(): void {

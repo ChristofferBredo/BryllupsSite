@@ -3,7 +3,7 @@ import { MockComponent } from 'ng-mocks';
 import { AgendaItemComponent } from '../agenda-item/agenda-item.component';
 
 import { AgendaComponent } from './agenda.component';
-import { MatCard, MatCardContent, MatCardHeader } from '@angular/material/card';
+import { MatCard, MatCardContent, MatCardHeader, MatCardTitle } from '@angular/material/card';
 import { MatDivider } from '@angular/material/divider';
 import { MatGridList, MatGridTile } from '@angular/material/grid-list';
 
@@ -21,7 +21,8 @@ describe('AgendaComponent', () => {
         MatCardContent,
         MatDivider,
         MatGridList,
-        MatGridTile
+        MatGridTile,
+        MatCardTitle
       ]
     })
       .compileComponents();

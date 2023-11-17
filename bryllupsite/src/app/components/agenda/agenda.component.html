@@ -1,8 +1,9 @@
-<mat-card class="container border">
-    <mat-card-header class="header">
-        {{agendaTitle}}
+<mat-card class="container border agenda">
+    <mat-card-header>
+        <mat-card-title class="header">{{agendaTitle}}</mat-card-title>
     </mat-card-header>
-    <mat-grid-list class="image-container" cols="12" rowHeight="fit" style="height: 400px;">
+    <mat-divider style="margin: 0 20%;"></mat-divider>
+    <mat-grid-list class="image-container" cols="12" rowHeight="fit" style="height: 500px;">
         <mat-grid-tile [colspan]="3" [rowspan]="1">
             <img class="scale-with-width" src="assets/images/Stickwing_flipped_2x.png">
         </mat-grid-tile>

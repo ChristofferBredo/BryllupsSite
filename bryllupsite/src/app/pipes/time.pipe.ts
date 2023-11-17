@@ -6,10 +6,16 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class TimePipe implements PipeTransform {
 
-  transform(value: Time): string {
-    var hours = value.hours == 0 ? "00" : value.hours.toString();
-    var minutes = value.minutes == 0 ? "00" : value.minutes.toString();
+  transform(input: Time): string {
+    var hours: string = this.Format(input.hours);
+    var minutes: string = this.Format(input.minutes);
     return `${hours}:${minutes}`;
+  }
+
+  private Format(value: number) {
+    return value < 10 && value >= 0
+      ? "0" + value.toString()
+      : value.toString();
   }
 
 }
