@@ -1,10 +1,9 @@
 ul.agenda {
-    list-style: none;
-    font-size: large;
-    padding-left: 10%;
-    padding-right: 10%;
+    text-align: center;
 }
 
-@media screen and (max-width: 767px) {
-    
+@media screen and (max-width: 650px) {
+    ul.agenda {
+        text-align: center;
+    }
 }
