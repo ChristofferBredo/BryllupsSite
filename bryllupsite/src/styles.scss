@@ -35,7 +35,11 @@ ul {
 }
 
 mat-card-header {
+  text-align: center;
   margin: 5px 20px 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 mat-card-content {
@@ -44,11 +48,6 @@ mat-card-content {
 
 .header {
   font-size: xx-large;
-  justify-content: center;
-  /* align horizontal */
-  align-items: center;
-  /* align vertical */
-  text-align: center;
 }
 
 .image-container {
