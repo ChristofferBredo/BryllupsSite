@@ -28,11 +28,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 # TODO List
-- Homepage - med kort info om tidpunkt, lokation, og billede af os. 
-- Separate Agenda page 
-- Location information
-- booking and checkin information (same page as Location)
-- Wish list (Ønskeskyen link? og gavekoordinator)
-- Toasmaster information - med information om ønskede indslag
-- Efter bryllupet: Fotos fra festen?
-- 'footer' med initialer og dato
+- [x] Homepage - med kort info om tidpunkt, lokation, og billede af os. 
+- [x] Separate Agenda page 
+- [ ] booking and checkin information
+- [ ] Wish list (Ønskeskyen link? og gavekoordinator)
+- [ ] Toasmaster information - med information om ønskede indslag
+- [ ] Efter bryllupet: Fotos fra festen?
+- [x] 'footer' med initialer og dato
