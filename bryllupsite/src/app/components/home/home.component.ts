@@ -12,9 +12,9 @@ export class HomeComponent implements OnInit {
   dateText: string = "10. August,"
   yearText: string = "2024"
   locationText: string = "Rødvig Kro,"
-  regionText: string = "Stenvs"
-  ceremonyText: string = "Vielse i parken foran Rødvig Kro"
-  timeText: string = "Klokken 14:30"
+  regionText: string = "Stevns"
+  ceremonyText: string = "Vielse i kroparken"
+  timeText: string = "Klokken 15:00"
 
   isMobile: boolean = false;
   isMobileSubscription$: Subscription = new Subscription;
