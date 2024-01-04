@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { AgendaComponent } from './components/agenda/agenda.component';
-import { BookingInformationComponent } from './components/booking-information/booking-information.component';
+import { NgModule } from '@angular/core'
+import { RouterModule, type Routes } from '@angular/router'
+import { HomeComponent } from './components/home/home.component'
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'
+import { AgendaComponent } from './components/agenda/agenda.component'
+import { BookingInformationComponent } from './components/booking-information/booking-information.component'
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
@@ -12,9 +12,9 @@ const routes: Routes = [
 
   // Redirect empty path to Home
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
-  //Wild Card Route for 404 request
+  // Wild Card Route for 404 request
   { path: '**', pathMatch: 'full', component: PagenotfoundComponent }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
