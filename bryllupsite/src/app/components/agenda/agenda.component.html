@@ -1,16 +1,17 @@
 <mat-card class="container border agenda">
     <mat-card-header>
-        <mat-card-title class="header">{{agendaTitle}}</mat-card-title>
+        <h1>{{agendaTitle}}</h1>
     </mat-card-header>
-    <mat-divider style="margin: 0 20%;"></mat-divider>
+    <mat-divider></mat-divider>
     <mat-grid-list class="image-container" cols="12" rowHeight="fit" style="height: 500px;">
         <mat-grid-tile [colspan]="3" [rowspan]="1">
             <img class="scale-with-width" src="assets/images/Stickwing_flipped_2x.png">
         </mat-grid-tile>
         <mat-grid-tile [colspan]="6" [rowspan]="1">
             <ul class="row scale-with-height">
-                <li *ngFor="let item of agendaItems">
+                <li *ngFor="let item of agendaItems; let last = last;">
                     <app-agenda-item [agendaItem]="item"></app-agenda-item>
+                    <mat-divider *ngIf="!last"></mat-divider>
                 </li>
             </ul>
         </mat-grid-tile>

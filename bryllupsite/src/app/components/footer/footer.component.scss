@@ -7,19 +7,16 @@ a {
 .footer {
     margin: inherit auto;
 
-    width: 200px;
-    height: 120px;
+    mat-divider {
+        margin: 0% 20% !important;
+        border-top-color: #3e2723 !important;
+    }
 
-    .c-and-l {
-
-        .and {
-            font-size: 40px;
-        }
-
-        mat-divider {
-            border-top-width: 2px;
-            border-top-color: #3e2723;
-        }
+    img {
+        max-width: 400px; 
+        margin: auto; 
+        display: block;
+        width: 100%;
     }
 
     h1 {
@@ -50,8 +47,8 @@ a {
     .footer {
         margin: 5px auto;
 
-        width: 120px;
-        height: 80px;
+        width: 80%;
+        height: auto;
 
     }
 

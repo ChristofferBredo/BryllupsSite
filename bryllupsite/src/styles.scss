@@ -14,15 +14,15 @@ body {
   background-image: url('assets/images/white_wall_hash.png');
 }
 
-.container {
-  font-size: large;
-  max-width: 800px;
-  margin: 0 auto 20px;
+h1, h2 {
+  text-align: center;
+  font-family: 'Playfair display';
 }
 
-.intro-container {
+.container {
   font-size: medium;
-  margin: 0 5% 20px;
+  max-width: 800px;
+  margin: 0 auto 20px;
 }
 
 ul {
@@ -35,20 +35,25 @@ ul {
 }
 
 mat-card-header {
+  font-size: x-large;
+  text-align: center;
   margin: 5px 20px 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 mat-card-content {
   margin: 5px;
 }
 
-.header {
-  font-size: xx-large;
-  justify-content: center;
-  /* align horizontal */
-  align-items: center;
-  /* align vertical */
-  text-align: center;
+mat-divider {
+  margin: 0 10% !important;
+  border-top-width: 2px !important;
+}
+
+mat-grid-list {
+  margin-bottom: 16px;
 }
 
 .image-container {
@@ -84,22 +89,12 @@ mat-card-content {
   text-align: center;
 }
 
-.vertical-divider {
-  height: 100%;
-  border-left-width: 10px;
-}
-
 .navigation-button {
   font-size: large;
 }
 
 
 @media screen and (max-width: 650px) {
-
-  mat-card-header {
-    font-size: x-large;
-  }
-
   .container {
     font-size: large;
     max-width: 400px;

@@ -24,6 +24,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { CoverComponent } from './components/cover/cover.component';
 import { NavtabsComponent } from './components/navtabs/navtabs.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RoedvigKroComponent } from './components/location/locationcards/roedvig-kro/roedvig-kro.component';
+import { BookingInformationComponent } from './components/booking-information/booking-information.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { FooterComponent } from './components/footer/footer.component';
     NavBarComponent,
     CoverComponent,
     NavtabsComponent,
-    FooterComponent
+    FooterComponent,
+    RoedvigKroComponent,
+    BookingInformationComponent
   ],
   imports: [
     BrowserModule,
