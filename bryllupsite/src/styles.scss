@@ -16,6 +16,7 @@ body {
 
 h1, h2 {
   text-align: center;
+  font-family: 'Playfair display';
 }
 
 .container {
@@ -49,6 +50,10 @@ mat-card-content {
 mat-divider {
   margin: 0 10% !important;
   border-top-width: 2px !important;
+}
+
+mat-grid-list {
+  margin-bottom: 16px;
 }
 
 .image-container {

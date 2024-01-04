@@ -19,7 +19,6 @@ export class CoverComponent implements OnInit {
     this.isMobileSubscription$ = this.responsiveDesignService.GetIsMobileObservable()
       .subscribe(x => {
         this.isMobile = x;
-        console.log(this.isMobile)
       });
   }
 
