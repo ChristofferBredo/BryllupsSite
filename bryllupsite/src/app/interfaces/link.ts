@@ -1,8 +1,8 @@
-import { Component, Type } from "@angular/core";
+import { Type } from '@angular/core'
 
 export interface Link {
-    path: string,
-    label: string,
-    component: Type<any>,
+  path: string
+  label: string
+  component: Type<any>
 
 }

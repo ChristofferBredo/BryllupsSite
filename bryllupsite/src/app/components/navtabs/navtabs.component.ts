@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Link } from 'src/app/interfaces/link';
-import { RouterlinksService } from 'src/app/services/routerlinks.service';
+import { Component, OnInit } from '@angular/core'
+import { Link } from 'src/app/interfaces/link'
+import { RouterlinksService } from 'src/app/services/routerlinks.service'
 
 @Component({
   selector: 'app-navtabs',
@@ -9,11 +9,11 @@ import { RouterlinksService } from 'src/app/services/routerlinks.service';
 })
 
 export class NavtabsComponent implements OnInit {
-  navLinks : Link[] = []
-  
-  constructor(private routerlinksService : RouterlinksService) {}
-  
-  ngOnInit(): void {
-    this.navLinks = this.routerlinksService.GetRouterLinks();
+  navLinks: Link[] = []
+
+  constructor (private readonly routerlinksService: RouterlinksService) {}
+
+  ngOnInit (): void {
+    this.navLinks = this.routerlinksService.GetRouterLinks()
   }
 }

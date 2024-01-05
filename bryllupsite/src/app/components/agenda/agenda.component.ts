@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AgendaItem } from '../agenda-item/agenda-item';
-import { AgendaService } from 'src/app/services/agenda.service';
+import { Component, OnInit } from '@angular/core'
+import { AgendaItem } from '../agenda-item/agenda-item'
+import { AgendaService } from 'src/app/services/agenda.service'
 
 @Component({
   selector: 'app-agenda',
@@ -8,14 +8,15 @@ import { AgendaService } from 'src/app/services/agenda.service';
   styleUrls: ['./agenda.component.scss']
 })
 export class AgendaComponent implements OnInit {
-  agendaTitle = "Tidsplanen";
-  agendaItems: AgendaItem[] = [];
+  agendaTitle = 'Tidsplanen'
+  agendaItems: AgendaItem[] = []
 
-  constructor(
-    private agendaService: AgendaService) {
+  constructor (
+    private readonly agendaService: AgendaService) {
 
   }
-  ngOnInit(): void {
-    this.agendaItems = this.agendaService.GetAgendaItems();
+
+  ngOnInit (): void {
+    this.agendaItems = this.agendaService.GetAgendaItems()
   }
 }

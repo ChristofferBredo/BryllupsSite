@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { ResponsiveDesignService } from 'src/app/services/responsivedesign.service';
+import { Component, type OnInit } from '@angular/core'
+import { Subscription } from 'rxjs'
+import { ResponsiveDesignService } from 'src/app/services/responsivedesign.service'
 
 @Component({
   selector: 'app-booking-information',
@@ -8,25 +8,22 @@ import { ResponsiveDesignService } from 'src/app/services/responsivedesign.servi
   styleUrls: ['./booking-information.component.scss']
 })
 export class BookingInformationComponent implements OnInit {
-  cols: number = 3;
-  
+  cols: number = 3
+  isMobile: boolean = false
+  isMobileSubscription$: Subscription = new Subscription()
 
-  isMobile: boolean = false;
-  isMobileSubscription$: Subscription = new Subscription;
-
-  constructor(private responsiveDesignService: ResponsiveDesignService) { }
+  constructor (private readonly responsiveDesignService: ResponsiveDesignService) { }
   ngOnInit(): void {
-    this.isMobile = this.responsiveDesignService.GetCurrentIsMobile();
-    this.cols = this.calculateCols(this.isMobile);
+    this.isMobile = this.responsiveDesignService.GetCurrentIsMobile()
+    this.cols = this.calculateCols(this.isMobile)
     this.isMobileSubscription$ = this.responsiveDesignService.GetIsMobileObservable()
       .subscribe(x => {
-        this.isMobile = x;
-        this.cols = this.calculateCols(this.isMobile);
-      });
+        this.isMobile = x
+        this.cols = this.calculateCols(this.isMobile)
+      })
   }
 
-  calculateCols(isMobile: boolean) {
-    return isMobile ? 1 : 3;
+  calculateCols(isMobile: boolean): 3 | 1 {
+    return isMobile ? 1 : 3
   }
-
 }

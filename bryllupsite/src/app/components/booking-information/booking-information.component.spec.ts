@@ -12,7 +12,19 @@ describe('BookingInformationComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BookingInformationComponent, MatCard, MatCardHeader, MatCardContent, MatCardTitle, MatCardSubtitle, MatDivider, MatGridList, MatGridTile, MatList, MatListItem]
+      declarations: [
+        BookingInformationComponent,
+        MatCard,
+        MatCardHeader,
+        MatCardContent,
+        MatCardTitle,
+        MatCardSubtitle,
+        MatDivider,
+        MatGridList,
+        MatGridTile,
+        MatList,
+        MatListItem
+      ]
     })
     fixture = TestBed.createComponent(BookingInformationComponent)
     component = fixture.componentInstance

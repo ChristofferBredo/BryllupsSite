@@ -8,7 +8,4 @@ import { AgendaItem } from './agenda-item';
 })
 export class AgendaItemComponent {
   @Input() agendaItem!: AgendaItem
-
-  constructor(){}
-  
 }

@@ -1,15 +1,15 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MockComponent } from 'ng-mocks';
-import { AgendaItemComponent } from '../agenda-item/agenda-item.component';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
+import { MockComponent } from 'ng-mocks'
+import { AgendaItemComponent } from '../agenda-item/agenda-item.component'
 
-import { AgendaComponent } from './agenda.component';
-import { MatCard, MatCardContent, MatCardHeader, MatCardTitle } from '@angular/material/card';
-import { MatDivider } from '@angular/material/divider';
-import { MatGridList, MatGridTile } from '@angular/material/grid-list';
+import { AgendaComponent } from './agenda.component'
+import { MatCard, MatCardContent, MatCardHeader, MatCardTitle } from '@angular/material/card'
+import { MatDivider } from '@angular/material/divider'
+import { MatGridList, MatGridTile } from '@angular/material/grid-list'
 
 describe('AgendaComponent', () => {
-  let component: AgendaComponent;
-  let fixture: ComponentFixture<AgendaComponent>;
+  let component: AgendaComponent
+  let fixture: ComponentFixture<AgendaComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -25,14 +25,14 @@ describe('AgendaComponent', () => {
         MatCardTitle
       ]
     })
-      .compileComponents();
+      .compileComponents()
 
-    fixture = TestBed.createComponent(AgendaComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(AgendaComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

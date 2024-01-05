@@ -1,24 +1,18 @@
-import { Injectable, OnInit } from '@angular/core';
-import { Observable, auditTime, distinctUntilChanged, fromEvent, map } from 'rxjs';
+import { Injectable } from '@angular/core'
+import { type Observable, auditTime, distinctUntilChanged, fromEvent, map } from 'rxjs'
 
 @Injectable({
   providedIn: 'root'
 })
-export class ResponsiveDesignService implements OnInit {
-  constructor() { }
+export class ResponsiveDesignService {
+  isMobileObservable$: Observable<boolean> = this.CreateObservable()
 
-  isMobileObservable$: Observable<boolean> = this.CreateObservable();
-
-  ngOnInit() {
-
+  GetIsMobileObservable (): Observable<boolean> {
+    return this.isMobileObservable$
   }
 
-  GetIsMobileObservable() {
-    return this.isMobileObservable$;
-  }
-
-  GetCurrentIsMobile() {
-    return this.IsMobile(window.innerWidth);
+  GetCurrentIsMobile (): boolean {
+    return this.IsMobile(window.innerWidth)
   }
 
   private CreateObservable(): Observable<boolean> {
@@ -28,7 +22,7 @@ export class ResponsiveDesignService implements OnInit {
     )
   }
 
-  private IsMobile(width: number) {
-    return width < 650;
+  private IsMobile (width: number): boolean {
+    return width < 650
   }
 }
