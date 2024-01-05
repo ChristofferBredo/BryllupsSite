@@ -1,18 +1,27 @@
 <div class="container footer">
-    <img src="assets/images/Laura&Christoffer_groen_ring.png">
-    <mat-divider></mat-divider>
-    <h2 class="flex-center">10.10.2024</h2>
+  <img src="assets/images/Laura&Christoffer_groen_ring.png" />
+  <mat-divider></mat-divider>
+  <h2 class="flex-center">10.08.2024</h2>
 </div>
 
-<mat-divider style="margin-bottom: 5px;"></mat-divider>
-<mat-grid-list class="credentials container" [cols]="footercols" rowHeight="20px">
-    <mat-grid-tile class="source-code">
-        <span>Lavet af Christoffer Bredo Lillelund.</span>
-    </mat-grid-tile>
-    <mat-grid-tile class="contact-info">
-        <span>Kontakt: <a href="mailto:{{mailAddress}}">{{mailAddress}}</a></span>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <span>Kildekoden kan findes på <a href="{{githubUrl}}" target="_blank">Github</a></span>
-    </mat-grid-tile>
+<mat-divider style="margin-bottom: 5px"></mat-divider>
+<mat-grid-list
+  class="credentials container"
+  [cols]="footercols"
+  rowHeight="20px"
+>
+  <mat-grid-tile class="source-code">
+    <span>Lavet af Christoffer Bredo Lillelund.</span>
+  </mat-grid-tile>
+  <mat-grid-tile class="contact-info">
+    <span
+      >Kontakt: <a href="mailto:{{ mailAddress }}">{{ mailAddress }}</a></span
+    >
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <span
+      >Kildekoden kan findes på
+      <a href="{{ githubUrl }}" target="_blank">Github</a></span
+    >
+  </mat-grid-tile>
 </mat-grid-list>
