@@ -23,7 +23,8 @@ import { MatTabsModule } from '@angular/material/tabs'
 import { CoverComponent } from './components/cover/cover.component'
 import { NavtabsComponent } from './components/navtabs/navtabs.component'
 import { FooterComponent } from './components/footer/footer.component'
-import { BookingInformationComponent } from './components/booking-information/booking-information.component'
+import { BookingInformationComponent } from './components/booking-information/booking-information.component';
+import { IndslagComponent } from './components/indslag/indslag.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { BookingInformationComponent } from './components/booking-information/bo
     CoverComponent,
     NavtabsComponent,
     FooterComponent,
-    BookingInformationComponent
+    BookingInformationComponent,
+    IndslagComponent
   ],
   imports: [
     BrowserModule,
