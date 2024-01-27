@@ -8,7 +8,7 @@ import { ResponsiveDesignService } from 'src/app/services/responsivedesign.servi
   styleUrls: ['./cover.component.scss']
 })
 export class CoverComponent implements OnInit {
-  coverText = 'Christoffer og Laura'
+  coverText = 'Laura & Christoffer'
   coverSubText = '10. August 2024'
   isMobile: boolean = false
   isMobileSubscription$: Subscription = new Subscription()

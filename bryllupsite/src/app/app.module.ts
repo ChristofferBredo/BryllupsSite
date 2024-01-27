@@ -24,7 +24,7 @@ import { CoverComponent } from './components/cover/cover.component'
 import { NavtabsComponent } from './components/navtabs/navtabs.component'
 import { FooterComponent } from './components/footer/footer.component'
 import { BookingInformationComponent } from './components/booking-information/booking-information.component';
-import { ToastmasterComponent } from './components/toastmaster/toastmaster.component'
+import { PraticalInformationComponent } from './components/praticalinformation/praticalinformation.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { ToastmasterComponent } from './components/toastmaster/toastmaster.compo
     NavtabsComponent,
     FooterComponent,
     BookingInformationComponent,
-    ToastmasterComponent
+    PraticalInformationComponent
   ],
   imports: [
     BrowserModule,
