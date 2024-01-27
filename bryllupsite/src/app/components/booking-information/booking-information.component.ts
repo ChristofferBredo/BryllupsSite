@@ -8,12 +8,13 @@ import { ResponsiveDesignService } from 'src/app/services/responsivedesign.servi
   styleUrls: ['./booking-information.component.scss']
 })
 export class BookingInformationComponent implements OnInit {
+  contactMailAddress: string = 'christofferbredo@gmail.com'
   cols: number = 3
   isMobile: boolean = false
   isMobileSubscription$: Subscription = new Subscription()
 
   constructor (private readonly responsiveDesignService: ResponsiveDesignService) { }
-  ngOnInit(): void {
+  ngOnInit (): void {
     this.isMobile = this.responsiveDesignService.GetCurrentIsMobile()
     this.cols = this.calculateCols(this.isMobile)
     this.isMobileSubscription$ = this.responsiveDesignService.GetIsMobileObservable()
@@ -23,7 +24,7 @@ export class BookingInformationComponent implements OnInit {
       })
   }
 
-  calculateCols(isMobile: boolean): 3 | 1 {
+  calculateCols (isMobile: boolean): 3 | 1 {
     return isMobile ? 1 : 3
   }
 }

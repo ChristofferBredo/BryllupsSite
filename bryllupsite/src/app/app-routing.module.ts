@@ -4,13 +4,13 @@ import { HomeComponent } from './components/home/home.component'
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'
 import { AgendaComponent } from './components/agenda/agenda.component'
 import { BookingInformationComponent } from './components/booking-information/booking-information.component'
-import { IndslagComponent } from './components/indslag/indslag.component'
+import { ToastmasterComponent } from './components/toastmaster/toastmaster.component'
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'Agenda', component: AgendaComponent },
   { path: 'Booking', component: BookingInformationComponent },
-  { path: 'Indslag', component: IndslagComponent },
+  { path: 'Toastmaster', component: ToastmasterComponent },
 
   // Redirect empty path to Home
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
