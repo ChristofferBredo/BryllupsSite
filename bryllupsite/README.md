@@ -35,3 +35,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [ ] Toasmaster information - med information om ønskede indslag
 - [ ] Efter bryllupet: Fotos fra festen?
 - [x] 'footer' med initialer og dato
+- [ ] Praktisk information - en ny side med Toastmaster og indslag, dresscode, vielse, transport, 

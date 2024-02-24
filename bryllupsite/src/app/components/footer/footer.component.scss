@@ -1,66 +1,61 @@
-@use '@angular/material' as mat;
-
-a {
-    color: inherit;
-}
+@use "@angular/material" as mat;
 
 .footer {
-    margin: inherit auto;
+  margin: inherit auto;
 
-    mat-divider {
-        margin: 0% 20% !important;
-        border-top-color: #3e2723 !important;
-    }
+  mat-divider {
+    margin: 0% 20% !important;
+    border-top-color: #4f5344 !important;
+  }
 
-    img {
-        max-width: 400px; 
-        margin: auto; 
-        display: block;
-        width: 100%;
-    }
+  img {
+    max-width: 400px;
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
 
-    h1 {
-        font-size: 50px;
-    }
+  h1 {
+    font-size: 50px;
+  }
 
-    h2 {
-        font-size: xx-large;
-    }
+  h2 {
+    font-size: xx-large;
+    color: #4f5344;
+  }
 }
 
 .flex-center {
-    display: flex;
-    justify-content: center;
-    /* align horizontal */
-    align-items: center;
-    /* align vertical */
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
 }
 
 .credentials {
-    position: relative;
-    bottom: 0;
-    font-size: small;
-
+  position: relative;
+  bottom: 0;
+  font-size: small;
 }
 
 @media screen and (max-width: 650px) {
-    .footer {
-        margin: 5px auto;
+  .footer {
+    margin: 5px auto;
 
-        width: 80%;
-        height: auto;
+    width: 80%;
+    height: auto;
+  }
 
-    }
+  .footer h1 {
+    font-size: xx-large;
+  }
 
-    .footer h1 {
-        font-size: xx-large;
-    }
+  .footer h2 {
+    font-size: large;
+  }
 
-    .footer h2 {
-        font-size: large;
-    }
-
-    .footer .c-and-l .and {
-        font-size: x-large;
-    }
+  .footer .c-and-l .and {
+    font-size: x-large;
+  }
 }

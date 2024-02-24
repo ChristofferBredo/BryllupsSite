@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import * as WebFont from 'webfontloader';
+import { Component, OnInit } from '@angular/core'
+import * as WebFont from 'webfontloader'
 
 @Component({
   selector: 'app-root',

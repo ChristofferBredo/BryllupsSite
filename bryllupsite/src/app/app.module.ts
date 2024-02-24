@@ -1,31 +1,30 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { HomeComponent } from './components/home/home.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { AgendaComponent } from './components/agenda/agenda.component';
-import { AgendaItemComponent } from './components/agenda-item/agenda-item.component';
-import { TimePipe } from './pipes/time.pipe';
-import { LocationComponent } from './components/location/location.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatTabsModule } from '@angular/material/tabs';
-import { CoverComponent } from './components/cover/cover.component';
-import { NavtabsComponent } from './components/navtabs/navtabs.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { RoedvigKroComponent } from './components/location/locationcards/roedvig-kro/roedvig-kro.component';
+import { AppRoutingModule } from './app-routing.module'
+import { AppComponent } from './app.component'
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'
+import { HomeComponent } from './components/home/home.component'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { AgendaComponent } from './components/agenda/agenda.component'
+import { AgendaItemComponent } from './components/agenda-item/agenda-item.component'
+import { TimePipe } from './pipes/time.pipe'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { LayoutModule } from '@angular/cdk/layout'
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatButtonModule } from '@angular/material/button'
+import { MatIconModule } from '@angular/material/icon'
+import { MatListModule } from '@angular/material/list'
+import { NavBarComponent } from './components/nav-bar/nav-bar.component'
+import { MatCardModule } from '@angular/material/card'
+import { MatGridListModule } from '@angular/material/grid-list'
+import { MatMenuModule } from '@angular/material/menu'
+import { MatTabsModule } from '@angular/material/tabs'
+import { CoverComponent } from './components/cover/cover.component'
+import { NavtabsComponent } from './components/navtabs/navtabs.component'
+import { FooterComponent } from './components/footer/footer.component'
 import { BookingInformationComponent } from './components/booking-information/booking-information.component';
+import { PraticalInformationComponent } from './components/praticalinformation/praticalinformation.component'
 
 @NgModule({
   declarations: [
@@ -35,13 +34,12 @@ import { BookingInformationComponent } from './components/booking-information/bo
     AgendaComponent,
     AgendaItemComponent,
     TimePipe,
-    LocationComponent,
     NavBarComponent,
     CoverComponent,
     NavtabsComponent,
     FooterComponent,
-    RoedvigKroComponent,
-    BookingInformationComponent
+    BookingInformationComponent,
+    PraticalInformationComponent
   ],
   imports: [
     BrowserModule,

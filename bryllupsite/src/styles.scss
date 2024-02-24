@@ -1,5 +1,5 @@
-@use '@angular/material' as mat;
-@use 'sass:map';
+@use "@angular/material" as mat;
+@use "sass:map";
 @use "./custom-theme.scss" as theme;
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
@@ -7,16 +7,17 @@
 
 $color-config: mat.get-color-config(theme.$bryllupsite-theme);
 
-$primary-palette: map.get($color-config, 'primary');
-$secondary-palette: map.get($color-config, 'accent');
+$primary-palette: map.get($color-config, "primary");
+$secondary-palette: map.get($color-config, "accent");
 
 body {
-  background-image: url('assets/images/white_wall_hash.png');
+  background-image: url("assets/images/white_wall_hash.png");
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
-  font-family: 'Playfair display';
+  font-family: "Playfair display";
 }
 
 .container {
@@ -34,6 +35,10 @@ ul {
   }
 }
 
+a {
+  color: inherit;
+}
+
 mat-card-header {
   font-size: x-large;
   text-align: center;
@@ -44,7 +49,7 @@ mat-card-header {
 }
 
 mat-card-content {
-  margin: 5px;
+  margin: 5px 10% 10px;  
 }
 
 mat-divider {
@@ -84,7 +89,6 @@ mat-grid-list {
   display: block;
 }
 
-
 .body-text {
   text-align: center;
 }
@@ -92,7 +96,6 @@ mat-grid-list {
 .navigation-button {
   font-size: large;
 }
-
 
 @media screen and (max-width: 650px) {
   .container {
