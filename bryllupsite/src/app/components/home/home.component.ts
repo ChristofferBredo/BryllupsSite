@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   locationText: string = 'Rødvig Kro,'
   regionText: string = 'Stevns'
   ceremonyText: string = 'Vielse i kroparken'
-  timeText: string = 'Klokken 15:00'
+  timeText: string = 'Klokken 14:00'
 
   isMobile: boolean = false
   isMobileSubscription$: Subscription = new Subscription()

@@ -1,3 +1,4 @@
+import { Time } from '@angular/common'
 import { Component } from '@angular/core'
 
 @Component({
@@ -6,5 +7,6 @@ import { Component } from '@angular/core'
   styleUrls: ['./praticalinformation.component.scss']
 })
 export class PraticalInformationComponent {
-  toastMasterMailAddress: string = 'KatinkasEmail@mail.dk'
+  toastMasterMailAddress: string = 'katinkapostbox@gmail.dk'
+  ceremonyTime: Time = { hours: 14, minutes: 0 }
 }

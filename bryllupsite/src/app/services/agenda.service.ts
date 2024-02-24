@@ -8,19 +8,19 @@ export class AgendaService {
   agendaItems: AgendaItem[] = [
     {
       time: { hours: 14, minutes: 0 },
-      description: 'Ankomst og check-in hos Rødvig Kro til overnattende'
+      description: 'Borgerlig vielse i parken'
     },
     {
       time: { hours: 14, minutes: 30 },
-      description: 'Borgerlig vielse i parken'
+      description: 'Check-in på værelser, gøre klar til festen'
     },
     {
       time: { hours: 15, minutes: 0 },
       description: 'Reception med kage og kaffe'
     },
     {
-      time: { hours: 17, minutes: 0 },
-      description: 'Vi går til bords'
+      time: { hours: 18, minutes: 0 },
+      description: 'Vi går til bords med god mad og indslag'
     },
     {
       time: { hours: 23, minutes: 30 },

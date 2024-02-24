@@ -2,7 +2,23 @@
   <mat-card-header>
     <h1>Praktisk Information</h1>
   </mat-card-header>
-  <mat-divider/>
+  <mat-divider />
+  <mat-card-header>
+    <h2>Vielsen</h2>
+  </mat-card-header>
+  <mat-card-content class="body-text">
+    <p>
+      Vielsen kommer til at være en borgerlig vielse. Vi blive viet af Christina klokken {{ceremonyTime | time }} i
+      parken ude foran Rødvig Kro. Det er en offentlig park, så der må ikke kastes med ris efter cermonien. Vi har hyret
+      en sanger til at synge os ind og ud fra cerimonien, samt en fælles sang undervejs.
+    </p>
+    <p>
+      Selvom vielsen starter klokken 14, så kom gerne i god tid. Ift. check-in tidspunkter og andet om overnatning, se
+      <a [routerLink]="['/Booking']">information om overnatning</a>.
+    </p>
+    <img mat-card-lg-image src="assets/images/aigen_greenbranch2.jpg">
+  </mat-card-content>
+  <mat-divider />
   <mat-card-header>
     <h2>Indslag</h2>
   </mat-card-header>
@@ -12,25 +28,24 @@
       eller andre former for indslag, som de bringer med.
     </p>
     <p>
-      Alle indslag skal koordineres med vores toastmaster Katinka. Hun kan kontaktes på mail på 
+      Alle indslag skal koordineres med vores toastmaster Katinka. Hun kan kontaktes på mail på
       <a href="mailto:{{ toastMasterMailAddress }}">{{
         toastMasterMailAddress
-      }}</a>
+        }}</a>
       .
     </p>
     <img mat-card-lg-image src="assets/images/aigen_greenbranch1.jpg">
   </mat-card-content>
-  <mat-divider/>
+  <mat-divider />
   <mat-card-header>
     <h2>Dresscode</h2>
   </mat-card-header>
   <mat-card-content class="body-text">
     <p>
-      Alle indslag skal koordineres med vores toastmaster Katinka. Hun kan kontaktes på mail på 
-      <a href="mailto:{{ toastMasterMailAddress }}">{{
-        toastMasterMailAddress
-      }}</a>
-      .
+      Vi håber at alle kommer i sit fineste puds, og er med til at lave en lækkert højtidlig stemning, som vi kan fejre
+      vores kærlighed i.
+      Så kom i flotte kjoler, smarte jakkesæt, og de pæneste sko. Tænk galla hos den nye konge! Intet er for meget, så
+      længe i ikke out-shiner brudeparret 😉
     </p>
     <img mat-card-lg-image src="assets/images/aigen_greenbranch2.jpg">
   </mat-card-content>
