@@ -1,0 +1,20 @@
+<mat-card class="container">
+    <mat-card-header>
+        <h1>Ønsker</h1>
+    </mat-card-header>
+    <mat-divider />
+    <mat-card-content class="body-text">
+        <p>
+            Vi har selvfølgelig nogle ønsker som i gæster kan læne jer op af. Vi har valgt at have en Ønskesky, for at
+            gøre det nemmere at koodinere gaver for jer. På ønskeskyen kan i se alle vores ønsker, samt reservere gaver
+            som i vil købe. Vi kan ikke se hvad folk har reserveret, så det er stadig en overraskelse for os.
+        </p>
+        <app-oenskeskyen></app-oenskeskyen>
+        <p>
+            Hvis i ikke er verdensmestre i Ønskeskyen, så frygt ej! Vi har også en gavekoordinator som i kan benytte.
+            Snak med Tina om hvad i køber. Så skal hun nok sørge for at vi ikke for 10 mikrobølgeovne med hjem fra
+            festen.
+        </p>
+        <app-responsibleperson [name]="coordinatorName" [title]="coordinatorTitle" [email]="coordinatorEmail" />
+    </mat-card-content>
+</mat-card>

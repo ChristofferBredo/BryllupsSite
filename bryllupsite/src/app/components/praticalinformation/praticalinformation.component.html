@@ -25,16 +25,11 @@
   <mat-card-content class="body-text">
     <p>
       Intet bryllup uden de fantastiske gæster, og deres søde taler, sjove lege
-      eller andre former for indslag, som de bringer med.
+      eller andre former for indslag, som de bringer med. Alle indslag skal koordineres med vores toastmaster Katinka.
+      Meld gerne ind i god tid, så Katinka har god mulighed for at planglægge aftenen, og sørge for at desserten kommer
+      på bordet før midnat.
     </p>
-    <p>
-      Alle indslag skal koordineres med vores toastmaster Katinka. Hun kan kontaktes på mail på
-      <a href="mailto:{{ toastMasterMailAddress }}">{{
-        toastMasterMailAddress
-        }}</a>
-      .
-    </p>
-    <img mat-card-lg-image src="assets/images/aigen_greenbranch1.jpg">
+    <app-responsibleperson [title]="toastmasterTitle" [name]="toastmasterName" [email]="toastmasterMailAddress" />
   </mat-card-content>
   <mat-divider />
   <mat-card-header>
@@ -47,6 +42,6 @@
       Så kom i flotte kjoler, smarte jakkesæt, og de pæneste sko. Tænk galla hos den nye konge! Intet er for meget, så
       længe i ikke out-shiner brudeparret 😉
     </p>
-    <img mat-card-lg-image src="assets/images/aigen_greenbranch2.jpg">
+    <img mat-card-lg-image src="assets/images/aigen_greenbranch1.jpg">
   </mat-card-content>
 </mat-card>

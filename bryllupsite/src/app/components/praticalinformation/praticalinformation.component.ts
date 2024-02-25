@@ -7,6 +7,8 @@ import { Component } from '@angular/core'
   styleUrls: ['./praticalinformation.component.scss']
 })
 export class PraticalInformationComponent {
-  toastMasterMailAddress: string = 'katinkapostbox@gmail.dk'
+  toastmasterTitle: string = 'Toastmaster'
+  toastmasterName: string = 'Katinka Friis'
+  toastmasterMailAddress: string = 'KatinkaPostbox@gmail.dk'
   ceremonyTime: Time = { hours: 14, minutes: 0 }
 }
