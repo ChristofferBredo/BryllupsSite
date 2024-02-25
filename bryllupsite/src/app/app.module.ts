@@ -24,7 +24,10 @@ import { CoverComponent } from './components/cover/cover.component'
 import { NavtabsComponent } from './components/navtabs/navtabs.component'
 import { FooterComponent } from './components/footer/footer.component'
 import { BookingInformationComponent } from './components/booking-information/booking-information.component';
-import { PraticalInformationComponent } from './components/praticalinformation/praticalinformation.component'
+import { PraticalInformationComponent } from './components/praticalinformation/praticalinformation.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { OenskeskyenComponent } from './components/wishlist/oenskeskyen/oenskeskyen.component';
+import { ResponsiblepersonComponent } from './components/responsibleperson/responsibleperson.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { PraticalInformationComponent } from './components/praticalinformation/p
     NavtabsComponent,
     FooterComponent,
     BookingInformationComponent,
-    PraticalInformationComponent
+    PraticalInformationComponent,
+    WishlistComponent,
+    OenskeskyenComponent,
+    ResponsiblepersonComponent
   ],
   imports: [
     BrowserModule,
