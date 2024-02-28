@@ -8,10 +8,11 @@
   </mat-card-header>
   <mat-card-content class="body-text">
     <p>
-      Vielsen kommer til at være en borgerlig vielse. Vi blive viet af Christina klokken {{ceremonyTime | time }} i
-      parken ude foran Rødvig Kro. Det er en offentlig park, så der må ikke kastes med ris efter cermonien. Vi har hyret
-      en sanger til at synge os ind og ud fra cerimonien, samt en fælles sang undervejs.
+      Vielsen kommer til at foregå i krohaven foran badehotellet klokken {{ceremonyTime | time }}. Det er en offentlig
+      park, så der må ikke kastes med ris efter cermonien, men vi finder et godt alternativ.
     </p>
+    <p> Vi frabeder os billeder under cermonien. Vi har hyret en professionel fotograf som har helt styr på det, og vi
+      vil hellere se jeres smukke ansigter end telefoner.</p>
     <p>
       Selvom vielsen starter klokken 14, så kom gerne i god tid. Ift. check-in tidspunkter og andet om overnatning, se
       <a [routerLink]="['/Booking']">information om overnatning</a>.
@@ -26,7 +27,7 @@
     <p>
       Intet bryllup uden de fantastiske gæster, og deres søde taler, sjove lege
       eller andre former for indslag, som de bringer med. Alle indslag skal koordineres med vores toastmaster Katinka.
-      Meld gerne ind i god tid, så Katinka har god mulighed for at planglægge aftenen, og sørge for at desserten kommer
+      Meld gerne ind i god tid, så Katinka har god mulighed for at planlægge aftenen, og sørge for at desserten kommer
       på bordet før midnat.
     </p>
     <app-responsibleperson [title]="toastmasterTitle" [name]="toastmasterName" [email]="toastmasterMailAddress" />
@@ -37,11 +38,19 @@
   </mat-card-header>
   <mat-card-content class="body-text">
     <p>
-      Vi håber at alle kommer i sit fineste puds, og er med til at lave en lækkert højtidlig stemning, som vi kan fejre
-      vores kærlighed i.
-      Så kom i flotte kjoler, smarte jakkesæt, og de pæneste sko. Tænk galla hos den nye konge! Intet er for meget, så
-      længe i ikke out-shiner brudeparret 😉
+      Kom gerne i jeres flotteste kjoler, smarteste jakkesæt, og de pæneste sko. Vi går all-out, så vi håber i vil gøre
+      det samme!
     </p>
     <img mat-card-lg-image src="assets/images/aigen_greenbranch1.jpg">
+  </mat-card-content>
+  <mat-card-header>
+    <h2>Kosthensyn og allergi</h2>
+  </mat-card-header>
+  <mat-card-content class="body-text">
+    <p>
+      Menuen kommer til at være fuldt vegetarisk. Hvis i har andre kosthensyn eller allergier, så giv os gerne besked
+      ved svar på invitationen. Så snakker vi med køkkenet.
+    </p>
+    <img mat-card-lg-image src="assets/images/aigen_greenbranch2.jpg">
   </mat-card-content>
 </mat-card>

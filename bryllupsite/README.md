@@ -30,9 +30,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # TODO List
 - [x] Homepage - med kort info om tidpunkt, lokation, og billede af os. 
 - [x] Separate Agenda page 
-- [ ] booking and checkin information
-- [ ] Wish list (Ønskeskyen link? og gavekoordinator)
-- [ ] Toasmaster information - med information om ønskede indslag
-- [ ] Efter bryllupet: Fotos fra festen?
+- [x] booking and checkin information
+- [x] Wish list (Ønskeskyen link? og gavekoordinator)
+- [x] Toasmaster information - med information om ønskede indslag
 - [x] 'footer' med initialer og dato
-- [ ] Praktisk information - en ny side med Toastmaster og indslag, dresscode, vielse, transport, 
+- [x] Praktisk information - en ny side med Toastmaster og indslag, dresscode, vielse, transport, 
+- [x] Lav sektion i Praktisk Information om Menu og allergener/kosthensyn
+- [ ] Efter bryllupet: Fotos fra festen?

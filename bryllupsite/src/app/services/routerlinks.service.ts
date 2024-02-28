@@ -12,7 +12,7 @@ import { WishlistComponent } from '../components/wishlist/wishlist.component'
 export class RouterlinksService {
   links: Link[] = [
     { path: 'Home', label: 'Forside', component: HomeComponent },
-    { path: 'Agenda', label: 'Tidsplanen', component: AgendaComponent },
+    { path: 'Agenda', label: 'Tidsplan', component: AgendaComponent },
     { path: 'Booking', label: 'Overnatning', component: BookingInformationComponent },
     { path: 'Information', label: 'Praktisk information', component: PraticalInformationComponent },
     { path: 'Wishlist', label: 'Ønsker', component: WishlistComponent }

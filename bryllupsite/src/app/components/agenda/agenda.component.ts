@@ -8,7 +8,7 @@ import { AgendaService } from 'src/app/services/agenda.service'
   styleUrls: ['./agenda.component.scss']
 })
 export class AgendaComponent implements OnInit {
-  agendaTitle = 'Tidsplanen'
+  agendaTitle = 'Tidsplan'
   agendaItems: AgendaItem[] = []
 
   constructor (

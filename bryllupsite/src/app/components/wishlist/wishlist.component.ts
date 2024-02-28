@@ -9,4 +9,5 @@ export class WishlistComponent {
   coordinatorName = 'Tina Wessman'
   coordinatorTitle = 'Gavekoordinator'
   coordinatorEmail = 'TinaWessman@gmail.com'
+  coordinatorPhone = '+4520471216'
 }
