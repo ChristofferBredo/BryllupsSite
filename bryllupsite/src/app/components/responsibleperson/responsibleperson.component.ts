@@ -9,4 +9,5 @@ export class ResponsiblepersonComponent {
   @Input({ required: true }) name!: string
   @Input({ required: true }) title!: string
   @Input({ required: true }) email!: string
+  @Input() phone: string | undefined
 }

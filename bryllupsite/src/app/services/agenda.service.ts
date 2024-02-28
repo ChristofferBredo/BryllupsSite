@@ -8,19 +8,19 @@ export class AgendaService {
   agendaItems: AgendaItem[] = [
     {
       time: { hours: 14, minutes: 0 },
-      description: 'Borgerlig vielse i parken'
+      description: 'Vielse'
     },
     {
       time: { hours: 14, minutes: 30 },
-      description: 'Check-in på værelser, gøre klar til festen'
+      description: 'Check-in'
     },
     {
       time: { hours: 15, minutes: 0 },
-      description: 'Reception med kage og kaffe'
+      description: 'Reception'
     },
     {
       time: { hours: 18, minutes: 0 },
-      description: 'Vi går til bords med god mad og indslag'
+      description: 'Vi går til bords'
     },
     {
       time: { hours: 23, minutes: 30 },
@@ -28,7 +28,7 @@ export class AgendaService {
     },
     {
       time: { hours: 0, minutes: 0 },
-      description: 'Dansegulvet åbner med DJ'
+      description: 'Dansegulvet åbner'
     },
     {
       time: { hours: 1, minutes: 0 },
