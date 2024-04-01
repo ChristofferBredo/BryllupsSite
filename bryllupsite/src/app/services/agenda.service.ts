@@ -33,6 +33,10 @@ export class AgendaService {
     {
       time: { hours: 1, minutes: 0 },
       description: 'Natmad'
+    },
+    {
+      time: { hours: 4, minutes: 0},
+      description: 'Tak for i aften'
     }
   ]
 
