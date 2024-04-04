@@ -9,6 +9,6 @@ import { Component } from '@angular/core'
 export class PraticalInformationComponent {
   toastmasterTitle: string = 'Toastmaster'
   toastmasterName: string = 'Katinka Friis'
-  toastmasterMailAddress: string = 'KatinkaPostbox@gmail.dk'
+  toastmasterMailAddress: string = 'KatinkasPostbox@gmail.com'
   ceremonyTime: Time = { hours: 14, minutes: 0 }
 }
