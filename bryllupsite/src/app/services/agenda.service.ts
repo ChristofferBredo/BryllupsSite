@@ -11,19 +11,19 @@ export class AgendaService {
       description: 'Vielse'
     },
     {
-      time: { hours: 14, minutes: 30 },
-      description: 'Check-in'
+      time: { hours: 14, minutes: 30},
+      description: 'Bobler i krohaven'
     },
     {
       time: { hours: 15, minutes: 0 },
       description: 'Reception'
     },
     {
-      time: { hours: 18, minutes: 0 },
+      time: { hours: 17, minutes: 30 },
       description: 'Vi går til bords'
     },
     {
-      time: { hours: 23, minutes: 30 },
+      time: { hours: 23, minutes: 45 },
       description: 'Brudevals'
     },
     {
@@ -31,7 +31,7 @@ export class AgendaService {
       description: 'Dansegulvet åbner'
     },
     {
-      time: { hours: 1, minutes: 0 },
+      time: { hours: 1, minutes: 30 },
       description: 'Natmad'
     },
     {
