@@ -6,8 +6,6 @@ import { AppComponent } from './app.component'
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'
 import { HomeComponent } from './components/home/home.component'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
-import { AgendaComponent } from './components/agenda/agenda.component'
-import { AgendaItemComponent } from './components/agenda-item/agenda-item.component'
 import { TimePipe } from './pipes/time.pipe'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { LayoutModule } from '@angular/cdk/layout'
@@ -27,15 +25,14 @@ import { BookingInformationComponent } from './components/booking-information/bo
 import { PraticalInformationComponent } from './components/praticalinformation/praticalinformation.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { OenskeskyenComponent } from './components/wishlist/oenskeskyen/oenskeskyen.component';
-import { ResponsiblepersonComponent } from './components/responsibleperson/responsibleperson.component'
+import { ResponsiblepersonComponent } from './components/responsibleperson/responsibleperson.component';
+import { PhotosComponent } from './components/photos/photos.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     PagenotfoundComponent,
     HomeComponent,
-    AgendaComponent,
-    AgendaItemComponent,
     TimePipe,
     NavBarComponent,
     CoverComponent,
@@ -45,7 +42,8 @@ import { ResponsiblepersonComponent } from './components/responsibleperson/respo
     PraticalInformationComponent,
     WishlistComponent,
     OenskeskyenComponent,
-    ResponsiblepersonComponent
+    ResponsiblepersonComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
