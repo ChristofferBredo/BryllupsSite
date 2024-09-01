@@ -50,7 +50,7 @@ resource bryllupstorage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
     }
     accessTier: 'Hot'
     customDomain: {
-      name: environment == 'prod' ? 'bryllup.christofferbredo.dk' : '${environment}.bryllup.christofferbredo.dk'
+      name: environment == 'prod' ? 'bryllup.lillelundwessman.dk' : '${environment}.bryllup.lillelundwessman.dk'
     }
   }
 }
