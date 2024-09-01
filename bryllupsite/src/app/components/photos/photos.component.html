@@ -1,0 +1,50 @@
+<mat-card class="container">
+    <mat-card-header>
+      <h1>Billeder</h1>
+    </mat-card-header>
+    <mat-divider />
+    <mat-card-header>
+      <h2>Se billederne fra fotografen</h2>
+    </mat-card-header>
+    <mat-card-content class="body-text flex-image-container">
+      <p>
+        Vi har fået taget en masse billeder af fantastiske <a target="_blank" [href]="photographerUrl">Salla Sarinja Svendsen</a>.
+        <br>
+        I kan se alle de flotte billeder ved at følge linket til vores galleri her: <a target="_blank" [href]="weddingPhotosUrl">Galleri</a>
+      </p>
+    </mat-card-content>
+    <img src="assets/images/L og C - Portrætter-25_websize.jpg">
+    <mat-divider />
+    <mat-card-header>
+      <h2>Upload jeres egne billeder her</h2>
+    </mat-card-header>
+    <mat-card-content class="body-text flex-image-container">
+      <p>
+        Vi vil meget gerne se jeres billeder fra dagen. Derfor har vi lavet muligheden for at samle dem alle ét sted.
+        Upload jeres billeder og videoer, og se de andre gæster's her. Klik på logoet for at uploade.
+      </p>
+      <a [href]="uploadUrl" target="_blank">
+        <img mat-card-lg-image src="assets/images/google-drive-upload-logo.png" alt="Google Drive logo">
+      </a>
+      <p>
+        Linket fører jer til en Google Drive folder.
+        Hvis i har nogen problemer så skriv til os, så finder vi en løsning. 
+      </p>
+    </mat-card-content>
+    <img src="assets/images/L og C - Vielse-15_websize.jpg">
+    <mat-divider />
+    <mat-card-header>
+      <h2>Selfie booth</h2>
+    </mat-card-header>
+    <mat-card-content class="body-text flex-image-container">
+      <p>
+        Som i nok lagde mærke til, så havde vi en selfie booth til festen, hvor i kunne tage billeder nogle flotte festglade billeder.
+        <br>
+        I kan se alle billederne ved at følge linket her: <a target="_blank" [href]="selfieBoothUrl">Selfies</a>
+      </p>
+      <p>
+        Hvis der er nogen af billederne i helst gerne vil have forsvinder, så skriv til os med billedes filnavn, så fjerner vi det.
+      </p>
+    </mat-card-content>
+    <img src="assets/images/L og C - Middag og taler -62_websize.jpg">
+  </mat-card>
