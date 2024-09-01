@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PhotosComponent } from './photos.component';
+import { MatCard, MatCardContent, MatCardHeader } from '@angular/material/card';
+import { MatDivider } from '@angular/material/divider';
 
 describe('PhotosComponent', () => {
   let component: PhotosComponent;
@@ -8,7 +10,7 @@ describe('PhotosComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PhotosComponent]
+      declarations: [PhotosComponent, MatCard, MatCardHeader, MatCardContent, MatDivider]
     });
     fixture = TestBed.createComponent(PhotosComponent);
     component = fixture.componentInstance;
