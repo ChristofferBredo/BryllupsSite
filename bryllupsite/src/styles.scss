@@ -97,6 +97,19 @@ mat-grid-list {
   font-size: large;
 }
 
+.flex-image-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+  // height: 100vh;          /* Full viewport height */
+}
+
+.flex-image-container img {
+  max-width: 100%;        /* Ensures the image fits within the container */
+  max-height: 100%;       /* Ensures the image fits within the container */
+  // border-radius: 15px;
+}
+
 @media screen and (max-width: 650px) {
   .container {
     font-size: large;

@@ -12,7 +12,7 @@ import { PhotosComponent } from '../components/photos/photos.component'
 export class RouterlinksService {
   links: Link[] = [
     { path: 'Home', label: 'Forside', component: HomeComponent },
-    { path: 'Photos', label: 'Fotografier', component: PhotosComponent },
+    { path: 'Photos', label: 'Billeder', component: PhotosComponent },
     { path: 'Booking', label: 'Overnatning', component: BookingInformationComponent },
     { path: 'Information', label: 'Praktisk information', component: PraticalInformationComponent },
     { path: 'Wishlist', label: 'Ønsker', component: WishlistComponent }
